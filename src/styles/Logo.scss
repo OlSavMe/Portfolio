@@ -1,0 +1,23 @@
+@import "./indexStyle.scss";
+
+main {
+  top: 2%;
+  right: 2%;
+  position: fixed;
+  z-index: 400;
+
+  .logo {
+    border: solid black 1px;
+    box-shadow: black 3px 3px;
+    align-items: center;
+    justify-items: space-around;
+    display: flex;
+  }
+  .logo-active {
+    border: solid black 1px;
+    box-shadow: white 3px 3px;
+    align-items: center;
+    justify-items: space-around;
+    display: flex;
+  }
+}

@@ -1,0 +1,65 @@
+@import "./indexStyle.scss";
+
+div {
+  .burger {
+    display: none;
+    @include phone {
+      position: fixed;
+      top: 3%;
+      left: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 2rem;
+      height: 2rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      z-index: 400;
+      &:focus {
+        outline: none;
+      }
+      div {
+        width: 2rem;
+        height: 0.25rem;
+        background: white;
+        border-radius: 10px;
+        transition: all 0.3s linear;
+        position: relative;
+        transform-origin: 1px;
+      }
+
+      div:nth-child(1) {
+        transform: rotate(45deg);
+      }
+      div:nth-child(2) {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      div:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+
+      &.closed div {
+        width: 2rem;
+        height: 0.25rem;
+        background: black;
+        border-radius: 10px;
+        transition: all 0.3s linear;
+        position: relative;
+        transform-origin: 1px;
+      }
+      &.closed div:nth-child(1) {
+        transform: rotate(0);
+      }
+      &.closed div:nth-child(2) {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      &.closed div:nth-child(3) {
+        transform: rotate(0);
+      }
+    }
+  }
+}
