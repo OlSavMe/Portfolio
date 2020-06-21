@@ -1,0 +1,202 @@
+@import "../App.scss";
+
+.nav {
+  font-family: "Belleza", sans-serif;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  z-index: 300;
+  left: 0;
+  top: 0;
+  background-color: white;
+  padding: 1% 2%;
+
+  .burger {
+    display: none;
+    @include phone {
+      position: fixed;
+      top: 5%;
+      left: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 2rem;
+      height: 2rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      z-index: 10;
+
+      &:focus {
+        outline: none;
+      }
+      div {
+        border: none;
+        width: 2rem;
+        height: 0.25rem;
+        background: black;
+        border-radius: 10px;
+        transition: all 0.3s linear;
+        position: relative;
+        transform-origin: 1px;
+        div:nth-child(1) {
+          transform: rotate(0);
+        }
+        div:nth-child(2) {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        div:nth-child(3) {
+          transform: rotate(0);
+        }
+      }
+
+      .burger-active {
+        position: fixed;
+        top: 5%;
+        left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 2rem;
+        height: 2rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 400;
+        &:focus {
+          outline: none;
+        }
+        div {
+          width: 2rem;
+          height: 0.25rem;
+          background: white;
+          border-radius: 10px;
+          transition: all 0.3s linear;
+          position: relative;
+          transform-origin: 1px;
+        }
+
+        div:nth-child(1) {
+          transform: rotate(45deg);
+        }
+        div:nth-child(2) {
+          opacity: 0;
+          transform: translateX(20px);
+        }
+        div:nth-child(3) {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  .menu {
+    margin: 1% 0;
+    left: 0;
+    @include phone {
+      display: none;
+    }
+    > a {
+      color: black;
+      font-size: 1.2rem;
+      margin: 0 1.3rem;
+      padding: 0.3rem 0;
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+    }
+    > a:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 3px;
+
+      position: absolute;
+      background: orange;
+      transition: width 0.5s ease 0.3s, left 0.5s ease 0.3s;
+      width: 0;
+    }
+    > a:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  .menu-mobile {
+    display: none;
+    @include phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: black;
+      transform: translateX(-100%);
+      height: 100vh;
+      width: 100%;
+      text-align: left;
+      padding: 2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 0.3s ease-in-out;
+      a {
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 2rem 0;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s linear;
+
+        &:hover {
+          color: orange;
+        }
+      }
+    }
+  }
+
+  .menu-mobile-active {
+    display: none;
+    @include phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: black;
+      transform: translateX(0);
+      height: 100vh;
+      width: 100%;
+      text-align: left;
+      padding: 2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 0.3s ease-in-out;
+      a {
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 2rem 0;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s linear;
+
+        &:hover {
+          color: orange;
+        }
+      }
+    }
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+}
