@@ -11,9 +11,14 @@ const Menu = ({ open, setOpen }) => {
     { name: "Contact", to: "/contact" },
   ];
 
+  const handleClose = (e) => {
+    console.log("closed");
+    setOpen(!open);
+  };
+
   const NavLinks = () =>
     links.map((link, index) => (
-      <Link key={index} to={link.to}>
+      <Link key={index} to={link.to} onClick={handleClose}>
         {link.name}
       </Link>
     ));
