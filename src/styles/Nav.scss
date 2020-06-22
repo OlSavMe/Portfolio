@@ -11,9 +11,9 @@ nav {
   left: 0;
   top: 0;
   background-color: white;
-  padding: 1%;
+  padding: 0 1%;
   transition: transform 0.3s ease-in-out;
-  box-shadow: 0.3px 0.3px 0.3px #070707;
+  // box-shadow: 0.3px 0.3px 0.3px #070707;
   @include phone {
     display: none;
   }
