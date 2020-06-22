@@ -2,9 +2,10 @@
 
 main {
   top: 1rem;
-  right: 2rem;
+  right: 3rem;
   position: fixed;
   z-index: 400;
+  transition: all 0.5s linear;
 
   @include phone {
     right: 1rem;
@@ -23,5 +24,16 @@ main {
     align-items: center;
     justify-items: space-around;
     display: flex;
+  }
+
+  &.scroll {
+    transform: rotate(90deg);
+    right: 0;
+    top: 4rem;
+    transition: all 0.5s linear;
+    @include phone {
+      top: 1rem;
+      right: -1rem;
+    }
   }
 }

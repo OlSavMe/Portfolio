@@ -36,9 +36,10 @@ nav {
       bottom: 0;
       content: "";
       display: block;
-      height: 2.5px;
+      height: 5px;
       position: absolute;
-      background: #ffae01;
+      background: hsl(44, 100%, 50%);
+      opacity: 0.5;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       width: 0;
     }
@@ -49,10 +50,29 @@ nav {
 
     .selectedLink:after {
       width: 100%;
-      height: 4px;
-      top: 23px;
-      background: #ffae01;
+      height: 5px;
+      top: 22px;
+      background: hsl(44, 100%, 50%);
+      opacity: 0.5;
       z-index: -1;
+    }
+
+    .selectedLink:before {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 5px;
+      position: absolute;
+      background: hsl(44, 100%, 50%);
+      opacity: 0.5;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+
+    .selectedLink:hover:before {
+      width: 100%;
+      left: 0;
     }
   }
 
