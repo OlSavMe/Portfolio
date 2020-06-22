@@ -5,8 +5,8 @@ div {
     display: none;
     @include phone {
       position: fixed;
-      top: 3%;
-      left: 2rem;
+      top: 1rem;
+      left: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;

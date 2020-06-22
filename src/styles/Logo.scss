@@ -1,10 +1,14 @@
 @import "./indexStyle.scss";
 
 main {
-  top: 2%;
-  right: 2%;
+  top: 1rem;
+  right: 2rem;
   position: fixed;
   z-index: 400;
+
+  @include phone {
+    right: 1rem;
+  }
 
   .logo {
     border: solid black 1px;

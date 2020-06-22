@@ -7,7 +7,7 @@ const Logo = ({ open, setOpen }) => {
   return (
     <main>
       <Link className={open ? "logo-active" : "logo"} to="/">
-        <img src={require("../assets/os.gif")} alt="logo"></img>
+        <img src={require("../assets/s.gif")} alt="logo"></img>
       </Link>
     </main>
   );
