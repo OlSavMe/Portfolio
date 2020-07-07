@@ -1,0 +1,110 @@
+@import "./indexStyle.scss";
+
+.container {
+  // scroll-snap-type: y mandatory;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  // padding: 2rem;
+  margin: 3rem auto;
+  @include phone {
+    padding: 0.5rem;
+  }
+
+  .hero {
+    height: 100vh;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    .about {
+      display: flex;
+      flex-direction: column;
+
+      padding: 0 10rem;
+    }
+    .scroll {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      bottom: 100px;
+      // left: calc(50% -10px);
+      font-size: 1.3rem;
+
+      .indicator {
+        position: relative;
+        height: 30px;
+        width: 30px;
+        background: white;
+        transform: rotate(45deg);
+        scroll-behavior: smooth;
+        > span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border: none;
+          border-right: 3px solid $yellow;
+          border-bottom: 3px solid $yellow;
+          display: block;
+          width: 100%;
+          height: 100%;
+          animation: animate 3s infinite;
+        }
+
+        > span:nth-child(1) {
+          top: 0;
+          left: 0;
+          animation-delay: 3s;
+        }
+        > span:nth-child(2) {
+          top: 5px;
+          left: 5px;
+          animation-delay: 3s;
+        }
+
+        @keyframes animate {
+          0% {
+            border-color: $yellow;
+            transform: translate(0, 0);
+          }
+          50% {
+            border-color: $yellow;
+            transform: translate(5px, 5px);
+          }
+
+          50% {
+            border-color: #f3d18b;
+            transform: translate(5px, 5px);
+          }
+          100% {
+            border-color: white;
+            transform: translate(0, 0);
+          }
+        }
+      }
+    }
+  }
+
+  .skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > p {
+      text-align: left;
+    }
+  }
+  .projects {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -1,7 +1,7 @@
 @import "./indexStyle.scss";
 
 main {
-  top: 1rem;
+  top: 1.5rem;
   right: 3rem;
   position: fixed;
   z-index: 400;
@@ -12,14 +12,19 @@ main {
   }
 
   .logo {
-    border: solid black 1px;
-    box-shadow: black 3px 3px;
+    padding: 2px;
+    border: solid rgba(0, 0, 0, 0.5) 1px;
+    box-shadow: $yellow 3px 3px;
     align-items: center;
     justify-items: space-around;
     display: flex;
+    > img {
+      padding: 2px;
+    }
   }
   .logo-active {
-    border: solid black 1px;
+    padding: 0;
+    border: none;
     box-shadow: white 3px 3px;
     align-items: center;
     justify-items: space-around;
@@ -29,7 +34,7 @@ main {
   &.scroll {
     transform: rotate(90deg);
     right: 0;
-    top: 4rem;
+    top: 3rem;
     transition: all 0.5s linear;
     @include phone {
       top: 1rem;
