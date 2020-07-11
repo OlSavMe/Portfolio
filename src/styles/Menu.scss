@@ -8,7 +8,7 @@
     justify-content: center;
     background: black;
     transform: translateX(0);
-    height: 100vh;
+    height: 100%;
     width: 100%;
     text-align: left;
     padding: 2rem;
@@ -16,6 +16,7 @@
     top: 0;
     left: 0;
     transition: transform 0.3s ease-in-out;
+    z-index: 101;
 
     a {
       font-size: 1.5rem;

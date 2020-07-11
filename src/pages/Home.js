@@ -2,19 +2,19 @@ import React from "react";
 import Photo from "../components/Photo";
 import Info from "../components/Info";
 import "../styles/Home.scss";
+import "../data/ProjectData";
+import { projectData } from "../data/ProjectData";
+import Project from "../components/Project";
 
 function Home() {
   return (
     <div className="container">
-      {/* <div className="inner"> */}
       <div className="hero">
-        <section className="about">
-          <Photo />
-          {/* <Info /> */}
-        </section>
+        <Photo />
+
         <div className="scroll">
           Selected Projects
-          <a href="#skills" className="indicator">
+          <a href="#projects" className="indicator">
             <span></span>
             <span></span>
           </a>
@@ -23,16 +23,10 @@ function Home() {
 
       {/* </div> */}
 
-      <div className="skills" id="skills">
-        <p>Frontend Development</p>
-        <p>Software Development student in Haaga Helia UAS</p>
-        <p>Web Design</p>
-        <p>email</p>
-        <p>Backend development</p>
-        <p>email</p>
-      </div>
-      <div className="projects">
-        <h2>selected projects</h2>
+      <div className="projects" id="projects">
+        {projectData.map((item, index) => (
+          <Project key={index} {...item} index={index} />
+        ))}
       </div>
     </div>
   );

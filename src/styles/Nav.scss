@@ -11,7 +11,7 @@ nav {
   top: 0;
   background-color: white;
   padding: 1% 2% 0 2%;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 1s ease-in-out;
   // box-shadow: 0.3px 0.3px 0.3px #070707;
   @include phone {
     display: none;
@@ -37,7 +37,7 @@ nav {
       display: block;
       height: 5px;
       position: absolute;
-      background: $yellow;
+      background: rgba(249, 166, 2, 0.3);
       opacity: 1;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       width: 0;
