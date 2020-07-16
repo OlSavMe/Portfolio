@@ -1,16 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Slider.scss";
 
 const Slider = () => {
+  const [isChecked, setIsChecked] = useState(true);
+
+  const toggleChange = () => {
+    setIsChecked(!isChecked);
+  };
+
   return (
     <div className="slider">
       <p>Selected Projects</p>
 
       <div class="slides">
-        <input type="radio" id="i1" name="images" checked />
-        <input type="radio" id="i2" name="images" />
-        <input type="radio" id="i3" name="images" />
-        <input type="radio" id="i4" name="images" />
+        <input
+          type="radio"
+          name="image"
+          id="i1"
+          checked={isChecked}
+          onChange={toggleChange}
+        />
+        <input
+          type="radio"
+          name="image"
+          id="i2"
+          checked={isChecked}
+          onChange={toggleChange}
+        />
+        <input
+          type="radio"
+          name="image"
+          id="i3"
+          checked={isChecked}
+          onChange={toggleChange}
+        />
+        <input
+          type="radio"
+          name="image"
+          id="i4"
+          checked={isChecked}
+          onChange={toggleChange}
+        />
         <div className="slide_img" id="one">
           <img src="img/short.jpg" />
 
@@ -23,7 +53,7 @@ const Slider = () => {
         </div>
 
         <div className="slide_img" id="two">
-          <img src="img/pr.jpg" />
+          <img src="img/current.jpg" />
 
           <label className="prev" for="i1">
             <span></span>
@@ -33,7 +63,7 @@ const Slider = () => {
           </label>
         </div>
         <div className="slide_img" id="three">
-          <img src="img/short.jpg" />
+          <img src="img/pr.jpg" />
 
           <label className="prev" for="i2">
             <span></span>
@@ -43,8 +73,7 @@ const Slider = () => {
           </label>
         </div>
         <div className="slide_img" id="four">
-          <img src="img/short.jpg" />
-
+          <img src="img/manag.png" />
           <label className="prev" for="i3">
             <span></span>
           </label>

@@ -22,7 +22,7 @@
     height: 0;
     padding-bottom: 40%;
     user-select: none;
-    // background-color: #1c1c1c;
+    background-color: #1c1c1c;
     box-shadow: 0 11px 22px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.24);
 
     input {
@@ -70,7 +70,7 @@
       position: absolute;
       width: 0px;
       height: 0px;
-      border: solid 20px;
+      border: solid 15px;
       top: 50%;
       transform: translateY(-50%);
     }
@@ -94,9 +94,9 @@
 
       .dots {
         top: -5px;
-        width: 18px;
-        height: 18px;
-        margin: 0 3px;
+        width: 15px;
+        height: 15px;
+        margin: 0 4px;
         position: relative;
         border-radius: 100%;
         display: inline-block;
@@ -105,9 +105,9 @@
         cursor: pointer;
       }
 
-      .dots:hover {
-        background: $yellow;
-      }
+      //   .dots:hover {
+      //     background: $yellow;
+      //   }
     }
 
     #i1:checked ~ #one,
@@ -140,63 +140,36 @@
       }
     }
   }
+
+  // @media screen and (max-width: 685px) {
+  //   .container {
+  //     border: none;
+  //     width: $small_width;
+  //     height: 0;
+  //     padding-bottom: $small_height;
+
+  //     .slide_img {
+  //       .prev,
+  //       .next {
+  //         width: $small_nav_width;
+  //       }
+
+  //       .prev span,
+  //       .next span {
+  //         border: solid 12px;
+  //       }
+  //       .prev span {
+  //         border-color: transparent #fff transparent transparent;
+  //       }
+  //       .next span {
+  //         border-color: transparent transparent transparent #fff;
+  //       }
+  //     }
+
+  //     #nav_slide .dots {
+  //       width: 12px;
+  //       height: 12px;
+  //     }
+  //   }
+  // }
 }
-
-// @media screen and (max-width: 685px) {
-//   .container {
-//     border: none;
-//     width: $small_width;
-//     height: 0;
-//     padding-bottom: $small_height;
-
-//     .slide_img {
-//       .prev,
-//       .next {
-//         width: $small_nav_width;
-//       }
-
-//       .prev span,
-//       .next span {
-//         border: solid 12px;
-//       }
-//       .prev span {
-//         border-color: transparent #fff transparent transparent;
-//       }
-//       .next span {
-//         border-color: transparent transparent transparent #fff;
-//       }
-//     }
-
-//     #nav_slide .dots {
-//       width: 12px;
-//       height: 12px;
-//     }
-//   }
-// }
-
-// .yt {
-//   margin: 0 auto;
-//   margin-top: 30px;
-//   width: 80px;
-//   height: 40px;
-//   border-radius: 4px;
-//   text-align: center;
-//   background: $blue;
-//   box-shadow: $box-shadow;
-//   transition: 0.4s;
-//   opacity: 0.4;
-
-//   a {
-//     position: relative;
-//     text-decoration: none;
-//     color: #fff;
-//     font-size: 23px;
-//     top: 4px;
-//   }
-// }
-
-// .yt:hover {
-//   transition: 0.3s;
-//   box-shadow: none;
-//   opacity: 0.8;
-// }
