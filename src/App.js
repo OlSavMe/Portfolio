@@ -12,12 +12,11 @@ const App = () => {
 
   return (
     <Router>
-      <div>
-        <Nav />
-        <Logo open={open} setOpen={setOpen} />
-        <Burger open={open} setOpen={setOpen} />
-        <Menu open={open} setOpen={setOpen} />
-      </div>
+      <Nav />
+      <Logo open={open} setOpen={setOpen} />
+      <Burger open={open} setOpen={setOpen} />
+      <Menu open={open} setOpen={setOpen} />
+
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/portfolio" component={Portfolio} />
@@ -25,6 +24,7 @@ const App = () => {
         <Route path="/exp" component={Experience} />
         <Route path="/contact" component={Contact} />
       </Switch>
+
       <Footer />
     </Router>
   );

@@ -2,26 +2,36 @@
 
 .photos {
   font-size: 1.3rem;
-  display: grid;
-  grid-template-columns: 250px 2fr;
-  padding: 10%;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // display: grid;
+  // grid-template-columns: 250px 2fr;
+  padding: 12%;
   align-items: center;
 
   @include phone {
-    grid-template-columns: 200px 1fr;
+    font-size: 1rem;
+    padding: 20% 5%;
   }
 
-  // flex: 1;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // align-items: center;
-  // justify-items: center;
-
   .item {
-    // transition: all 0.35s;
-    // transform: rotate(-1deg);
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 250px;
     filter: grayscale(10%) brightness(110%);
+
+    @include phone {
+      width: 160px;
+    }
+
+    @include tablet {
+      width: 230px;
+    }
+
+    @include tablet-landscape {
+      width: 230px;
+    }
 
     figure {
       width: 220px;
@@ -38,64 +48,38 @@
       margin-inline-end: 0;
 
       @include phone {
-        width: 180px;
+        width: 160px;
       }
-
-      // @include phone {
-      //   width: 200px;
-      // }
 
       > img {
         width: 100%;
       }
       > figcaption {
-        // font-size: 1.3rem;
         text-align: center;
-        // line-height: 2em;
         padding: 0.7rem 0 0.4rem;
         @include phone {
           font-size: 1rem;
+          padding: 0.5rem 0 0.1rem;
         }
       }
     }
   }
 
-  // .item:hover {
-  //   filter: none;
-  //   transform: scale(1.2, 1.2) !important;
-  //   transition: all 0.35s;
-  //   z-index: 1;
-  // }
-  // .item:nth-of-type(2) {
-  //   transform: rotate(2deg);
-  //   transition: all 0.35s;
-  // }
-  // .item:nth-of-type(3) {
-  //   transform: rotate(-2deg);
-  //   transition: all 0.35s;
-  // }
-  // .item:nth-of-type(1) {
-  //   transform: rotate(-1deg);
-  //   transition: all 0.35s;
-  // }
-  // .item:nth-of-type(4) {
-  //   transform: rotate(1deg);
-  //   transition: all 0.35s;
-  // }
+  > p {
+    text-align: justify;
+    margin: 0;
+    font-family: inherit;
+    padding: 0;
+    line-height: 3rem;
 
-  .about {
-    > p {
-      font-family: inherit;
-      padding: 0;
-
+    @include tablet {
       line-height: 2rem;
-
-      @include tablet {
-        font-size: 1rem;
-      }
-      @include phone {
-        font-size: 1rem;
-      }
+    }
+    @include phone {
+      line-height: 1.2rem;
+    }
+    @include tablet-landscape {
+      line-height: 2rem;
     }
   }
 }

@@ -5,13 +5,13 @@ div {
     display: none;
     @include phone {
       position: fixed;
-      top: 1rem;
-      left: 1rem;
+      top: 0.5rem;
+      left: 0.5rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      width: 2rem;
-      height: 2rem;
+      width: 1.8rem;
+      height: 1.8rem;
       background: transparent;
       border: none;
       cursor: pointer;
@@ -21,7 +21,7 @@ div {
         outline: none;
       }
       div {
-        width: 2rem;
+        width: 1.8rem;
         height: 0.25rem;
         background: white;
         border-radius: 10px;
@@ -42,9 +42,9 @@ div {
       }
 
       &.closed div {
-        width: 2rem;
+        width: 1.8rem;
         height: 0.25rem;
-        background: black;
+        background: #666666;
         border-radius: 10px;
         transition: all 0.3s linear;
         position: relative;

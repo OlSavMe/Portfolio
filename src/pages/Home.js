@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Photo from "../components/Photo";
-import Info from "../components/Info";
 import "../styles/Home.scss";
 import "../data/ProjectData";
 import { projectData } from "../data/ProjectData";
 import Project from "../components/Project";
+// import Modal from "../components/Modal";
 
 function Home() {
+  // const [show, setShow] = useState(false);
+
+  // const toggleModal = (e) => {
+  //   setShow(!show);
+  // };
+
   return (
     <div className="container">
       <div className="hero">
@@ -21,13 +27,11 @@ function Home() {
         </div>
       </div>
 
-      {/* </div> */}
-
-      <div className="projects" id="projects">
+      <section id="projects">
         {projectData.map((item, index) => (
           <Project key={index} {...item} index={index} />
         ))}
-      </div>
+      </section>
     </div>
   );
 }

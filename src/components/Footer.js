@@ -1,7 +1,22 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import "../styles/Footer.scss";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
+  const links = [
+    { name: "Portfolio", to: "/portfolio" },
+    { name: "Experience", to: "/exp" },
+    { name: "Education", to: "/edu" },
+    { name: "Contact", to: "/contact" },
+  ];
+
+  const NavLinks = () =>
+    links.map((link, index) => (
+      <NavLink key={index} to={link.to} activeClassName="selectedLink">
+        {link.name}
+      </NavLink>
+    ));
+
   return (
     <div className="footer">
       <section className="contact">
@@ -21,14 +36,23 @@ const Footer = () => {
           {" "}
           <img src={require("../assets/in.jpg")} alt="linkedin-icon" />
         </a>
-        <a href="mailto:savkao@hotmail.com">savkao@hotmail.com</a>
+        <a
+          href="https://github.com/OlSavMe"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          <img src={require("../assets/tube.png")} alt="github-icon" />
+        </a>
+        <a href="mailto:savkao@hotmail.com">
+          <span>savkao@hotmail.com</span>
+          <img src={require("../assets/email.jpg")} alt="email-icon" />
+        </a>
       </section>
-      <section className="refer">
-        <p>"fvbofbfjvbfvjbjvbsjvbkjbksbfbbksbksfbkbkb"</p>
-        <p>"fvbofbfjvbfvjbjvbsjvbkjbksbfbbksbksfbkbkb"</p>
-        <p>"fvbofbfjvbfvjbjvbsjvbkjbksbfbbksbksfbkbkb"</p>
-        <p>"fvbofbfjvbfvjbjvbsjvbkjbksbfbbksbksfbkbkb"</p>
+      <section className="navigation">
+        <NavLinks />
       </section>
+      <section className="refer"> {/* <Slider /> */}</section>
     </div>
   );
 };

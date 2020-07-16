@@ -2,7 +2,7 @@
 
 @include scrollbars;
 
-.container {
+.portfolio-container {
   display: flex;
   flex-direction: column;
   color: #666666;
@@ -11,9 +11,10 @@
     padding: 0.5rem;
   }
 
-  .hero {
+  .projects-section {
     height: 100vh;
     align-content: center;
+    justify-content: center;
 
     @include phone {
       height: auto;
@@ -84,31 +85,6 @@
           }
         }
       }
-    }
-  }
-
-  #projects {
-    display: grid;
-    padding: 2rem 4rem;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-gap: 2rem;
-
-    @include phone {
-      grid-template-columns: minmax(0, 1fr);
-      padding: 1rem;
-      grid-gap: 1rem;
-    }
-
-    @include tablet {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      padding: 1rem 4rem;
-      grid-gap: 1rem;
-    }
-
-    @include tablet-landscape {
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      padding: 1rem 4rem;
-      grid-gap: 1rem;
     }
   }
 }

@@ -1,0 +1,89 @@
+@import "./indexStyle.scss";
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.8s;
+  animation-name: animatetop;
+  animation-duration: 0.8s;
+
+  .content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    min-height: 80%;
+    border: 1px solid #888;
+    border-radius: 3px;
+    padding: 0 1rem;
+    width: 80%;
+
+    > span {
+      float: right;
+      outline: none;
+      background-color: transparent;
+      font-size: 3rem;
+      font-weight: bold;
+      box-shadow: none;
+      cursor: pointer;
+      border: none;
+    }
+    > article {
+      margin: 7% 10%;
+      display: flex;
+      flex-direction: column;
+      justify-items: stretch;
+    }
+  }
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animateup {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: -300px;
+    opacity: 1;
+  }
+}
+
+@keyframes animateup {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: -300px;
+    opacity: 1;
+  }
+}

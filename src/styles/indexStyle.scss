@@ -1,3 +1,5 @@
+// @import "~bootstrap/scss/bootstrap";
+
 @mixin scrollbars {
   // Chrome, Edge, Opera, Safari, iOS
   ::-webkit-scrollbar {
@@ -98,3 +100,4 @@
 
 // palette
 $yellow: #f9a602;
+$yellowrgb: rgb(249, 166, 2);
