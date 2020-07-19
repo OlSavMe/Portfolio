@@ -18,7 +18,7 @@ const Nav = () => {
       }
 
       prevPosY.current = currentPosY;
-      console.log(upScroll, currentPosY);
+      // console.log(upScroll, currentPosY);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });

@@ -3,5 +3,87 @@
 .github {
   display: flex;
   flex-direction: column;
-  padding: 5% 10%;
+  padding: 5% 10% 0;
+
+  .repolist {
+    display: flex;
+    flex-direction: column;
+    > p {
+      font-size: 1.2rem;
+      padding: 20px;
+      margin: 0;
+      > span {
+        color: $yellow;
+        padding: 0 2px;
+      }
+    }
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      color: $yellow;
+      .single {
+        overflow: hidden;
+        width: calc(50% - 10px);
+        margin: 20px 0;
+        font-size: 1.7rem;
+        padding: 1.5rem;
+        background-color: white;
+        border: solid rgba(0, 0, 0, 0.5) 1px;
+        box-shadow: $yellow 4px 4px;
+        @include phone {
+          margin: 2% 1%;
+          font-size: 1.2em;
+          width: calc(100% - 20px);
+        }
+
+        @include tablet {
+          font-size: 1.4rem;
+        }
+        @include tablet-landscape {
+          font-size: 1.4rem;
+        }
+        a {
+          width: 40px;
+          color: $yellow;
+          text-decoration: none;
+          padding: 0;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          @include phone {
+            text-decoration: underline;
+          }
+          > img {
+            height: 25px;
+          }
+        }
+
+        p {
+          font-size: 1.4rem;
+          color: #666666;
+          margin: 0;
+        }
+
+        span {
+          a {
+            font-size: 1.5rem;
+            color: $yellow;
+            background: none;
+            text-decoration: none;
+            @include phone {
+              font-size: 1.2rem;
+            }
+
+            &:hover {
+              color: #666666;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,6 +1,9 @@
 @import "./indexStyle.scss";
 
 .button-group {
+  .input {
+    display: none;
+  }
   ul {
     padding: 0;
     margin: 0;
@@ -14,18 +17,77 @@
       margin: 0 10px 10px 0;
       padding: 5px 10px;
       cursor: pointer;
-      border-radius: 5px;
+      // border-radius: 5px;
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease 0s;
       &:hover {
         box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
         background-color: rgba(249, 166, 2, 0.5);
       }
-
-      &:active {
-        box-shadow: 4px 4px 4px 0 rgba(102, 102, 102, 0.7);
+      &.active {
+        box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
         background-color: rgba(249, 166, 2, 0.5);
       }
     }
   }
 }
+
+// #b1 {
+//   &.select ~ ul #i1 {
+//     box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
+//     background-color: rgba(249, 166, 2, 0.5);
+//   }
+// }
+
+// #b2 {
+//   &.select ~ ul #i1 {
+//     box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
+//     background-color: rgba(249, 166, 2, 0.5);
+//   }
+// }
+// #b3 {
+//   &.select ~ ul #i2 {
+//     box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
+//     background-color: rgba(249, 166, 2, 0.5);
+//   }
+// }
+// #b3 {
+//   &.select ~ ul #i3 {
+//     box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
+//     background-color: rgba(249, 166, 2, 0.5);
+//   }
+// }
+// #b4 {
+//   &.select ~ ul #i4 {
+//     box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
+//     background-color: rgba(249, 166, 2, 0.5);
+//   }
+// }
+
+// #b5 {
+//   &.select ~ ul #i5 {
+//     box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
+//     background-color: rgba(249, 166, 2, 0.5);
+//   }
+// }
+
+// select ~ ul #i1 {
+//   box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
+//   background-color: rgba(249, 166, 2, 0.5);
+// }
+// #b2.select ~ ul #i2 {
+//   box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
+//   background-color: rgba(249, 166, 2, 0.5);
+// }
+// #b3.select ~ ul #i3 {
+//   box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
+//   background-color: rgba(249, 166, 2, 0.5);
+// }
+// #b4.select ~ ul #i4 {
+//   box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
+//   background-color: rgba(249, 166, 2, 0.5);
+// }
+// #b5.select ~ ul #i5 {
+//   box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
+//   background-color: rgba(249, 166, 2, 0.5);
+// }

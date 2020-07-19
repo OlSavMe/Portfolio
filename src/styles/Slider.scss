@@ -38,6 +38,32 @@
         width: inherit;
         height: inherit;
       }
+      .go {
+        width: 100%;
+        font-size: 1.5rem;
+        bottom: 20%;
+        height: 15px;
+        position: absolute;
+        text-align: center;
+        align-content: center;
+        z-index: 1;
+        > a {
+          min-width: 50px;
+          background-color: rgba(0, 0, 0, 0.9);
+          color: $yellow;
+          cursor: pointer;
+          text-decoration: none;
+          padding: 0.5rem 1.3rem;
+          border: solid 1px $yellow;
+          border-radius: 5px;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 1);
+            // color: #666666;
+            // border: solid 1px #666666;
+          }
+        }
+      }
     }
     .prev,
     .next {
@@ -83,9 +109,33 @@
       border-color: transparent transparent transparent #fff;
       left: 35%;
     }
+    .go {
+      width: 100%;
+      font-size: 1.5rem;
+      bottom: 35%;
+      height: 15px;
+      position: absolute;
+      text-align: center;
+      align-content: center;
+      z-index: 99;
+      > a {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: $yellow;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 0.5rem 1.3rem;
+        border: solid 1px $yellow;
+        border-radius: 5px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
     #nav_slide {
       width: 100%;
-      bottom: 12%;
+      bottom: 7%;
       height: 11px;
       position: absolute;
       text-align: center;

@@ -18,7 +18,7 @@ const Logo = ({ open, setOpen }) => {
       }
 
       prevPos.current = scrollPos;
-      console.log(scroll, scrollPos);
+      // console.log(scroll, scrollPos);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });

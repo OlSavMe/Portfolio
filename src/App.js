@@ -6,6 +6,7 @@ import Menu from "./components/nav/Menu";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Logo from "./components/Logo";
+import Provider from "./Context";
 
 const App = () => {
   const [open, setOpen] = useState(false);

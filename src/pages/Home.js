@@ -4,6 +4,7 @@ import "../styles/Home.scss";
 import "../data/ProjectData";
 import { projectData } from "../data/ProjectData";
 import Project from "../components/Project";
+import References from "../components/References";
 // import Modal from "../components/Modal";
 
 function Home() {

@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Footer.scss";
+import References from "./References";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
@@ -52,7 +53,9 @@ const Footer = () => {
       <section className="navigation">
         <NavLinks />
       </section>
-      <section className="refer"> {/* <Slider /> */}</section>
+      <section className="refer">
+        <References />
+      </section>
     </div>
   );
 };
