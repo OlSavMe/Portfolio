@@ -11,7 +11,7 @@ export const projectData = [
   },
   {
     title: "Current Portfoio site",
-    picture: "img/current.jpg",
+    picture: "img/cur.jpg",
     description: "blslslslsls  lslslslsl  slslslsl",
     summary: "blslslslsls",
     github: "https://github.com/OlSavMe/Current-CV-Website",

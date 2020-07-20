@@ -11,6 +11,10 @@
     overflow: visible;
     position: relative;
 
+    @include phone {
+      width: 250px;
+    }
+
     .mask {
       overflow: hidden;
       height: 350px;
