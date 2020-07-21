@@ -1,70 +1,77 @@
-// import React from "react";
-// import { useForm } from "react-hook-form";
-
-// const ContactForm = () => {
-//   const { handleSubmit, register, errors } = useForm();
-//   const onSubmit = (values) => console.log(values);
-
-//   return (
-//     <form onSubmit={handleSubmit(onSubmit)}>
-//       <input
-//         name="email"
-//         ref={register({
-//           required: "Required",
-//           pattern: {
-//             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-//             message: "invalid email address",
-//           },
-//         })}
-//       />
-//       {errors.email && errors.email.message}
-
-//       <input
-//         name="username"
-//         ref={register({
-//           validate: (value) => value !== "admin" || "Nice try!",
-//         })}
-//       />
-//       {errors.username && errors.username.message}
-
-//       <button type="submit">Submit</button>
-//     </form>
-//   );
-// };
-
-// export default ContactForm;
-
-import React from "react";
-import { Formik, Form, Field } from "formik";
+import React, { useState } from "react";
+// import { Form, Button } from "react-bootstrap";
+import axios from "axios";
 
 const ContactForm = () => {
+  const [result, setResult] = useState(null);
+  const [state, setState] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const sendEmail = (event) => {
+    event.preventDefault();
+    axios
+      .post("/send", { ...state })
+      .then((response) => {
+        setResult(response.data);
+        setState({ name: "", email: "", subject: "", message: "" });
+      })
+      .catch(() => {
+        setResult({ success: false, message: "Something went wrong" });
+      });
+  };
+
+  const onInputChange = (event) => {
+    const { name, value } = event.target;
+
+    setState({
+      ...state,
+      [name]: value,
+    });
+  };
+
   return (
-    <Formik
-      initialValues={{
-        name: "",
-        email: "",
-        message: "",
-      }}
-      onSubmit={(values, actions) => {
-        alert(JSON.stringify(values, null, 2));
-        actions.setSubmitting(false);
-      }}
-    >
-      {() => (
-        <Form>
-          <label htmlFor="name">Name: </label>
-          <Field name="name" />
-
-          <label htmlFor="email">Email: </label>
-          <Field name="email" />
-
-          <label htmlFor="message">Message: </label>
-          <Field name="message" component="textarea" />
-
-          <button type="submit">Send</button>
-        </Form>
-      )}
-    </Formik>
+    <div>
+      <form onSubmit={sendEmail}>
+        <label htmlFor="name">
+          Name:{" "}
+          <input
+            type="text"
+            name="name"
+            value={state.name}
+            placeholder="Enter your full name"
+            onChange={onInputChange}
+          />
+        </label>
+        <label htmlFor="email">
+          Email:{" "}
+          <input
+            type="email"
+            name="email"
+            value={state.email}
+            placeholder="Enter your email"
+            onChange={onInputChange}
+          />
+        </label>
+        <label htmlFor="message">
+          Message:
+          <textarea
+            type="message"
+            name="message"
+            value={state.message}
+            rows="3"
+            placeholder="Enter your message"
+            onChange={onInputChange}
+          ></textarea>
+        </label>
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
   );
 };
 
