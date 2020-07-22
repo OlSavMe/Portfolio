@@ -1,0 +1,85 @@
+@import "./indexStyle.scss";
+
+.edu-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .edu-container {
+    margin: 10%;
+    width: 70%;
+    font-size: 1.25rem;
+
+    h2 {
+      font-size: 1.3rem;
+      margin: 3%;
+      color: $yellow;
+    }
+
+    .edu {
+      position: relative;
+      background-color: #fff;
+      border: 1px $yellow solid;
+      margin: 0.5rem;
+      padding: 1rem;
+      transition: all 0.5s ease;
+
+      .header {
+        width: 85%;
+        display: inline-flex;
+        transition: all 0.5s ease;
+
+        span {
+          margin: 0;
+          a {
+            padding: 0 1rem;
+            color: $yellow;
+          }
+        }
+        .pic {
+          height: 30px;
+          display: inline-block;
+          position: absolute;
+          right: 15px;
+          transform: rotate(0deg);
+          transition: transform 0.7s;
+
+          &.unfold {
+            transform: rotate(180deg);
+          }
+        }
+
+        // .header:after {
+        //   content: "";
+        //   width: 15px;
+        //   height: 15px;
+        //   display: inline-block;
+        //   position: absolute;
+        //   right: 15px;
+        //   background-image: url("../assets/down.png") no-repeat;
+        //   transform: rotate(180deg);
+        //   transition: transform 0.3s;
+        // }
+      }
+
+      .details {
+        width: 90%;
+        padding: 1rem 0;
+        display: none;
+        transition: all 1s ease-out;
+
+        a {
+          padding: 0 1rem;
+          color: $yellow;
+        }
+      }
+
+      &.unfold {
+        .details {
+          display: block;
+          transition: all 0.5s ease;
+        }
+      }
+    }
+  }
+}

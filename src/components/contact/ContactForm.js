@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 // import { Form, Button } from "react-bootstrap";
 import axios from "axios";
+import "../../styles/ContactForm.scss";
 
 const ContactForm = () => {
   const [result, setResult] = useState(null);
   const [state, setState] = useState({
     name: "",
     email: "",
-    subject: "",
     message: "",
   });
 
@@ -17,7 +17,7 @@ const ContactForm = () => {
       .post("/send", { ...state })
       .then((response) => {
         setResult(response.data);
-        setState({ name: "", email: "", subject: "", message: "" });
+        setState({ name: "", email: "", message: "" });
       })
       .catch(() => {
         setResult({ success: false, message: "Something went wrong" });
@@ -34,7 +34,14 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className="contact-form">
+      {result ? (
+        <p className={`${result.success ? "success" : "error"}`}>
+          {result.message}
+        </p>
+      ) : (
+        <p>Feel free to contact me!</p>
+      )}
       <form onSubmit={sendEmail}>
         <label htmlFor="name">
           Name:{" "}
@@ -42,7 +49,6 @@ const ContactForm = () => {
             type="text"
             name="name"
             value={state.name}
-            placeholder="Enter your full name"
             onChange={onInputChange}
           />
         </label>
@@ -52,7 +58,6 @@ const ContactForm = () => {
             type="email"
             name="email"
             value={state.email}
-            placeholder="Enter your email"
             onChange={onInputChange}
           />
         </label>
@@ -62,8 +67,6 @@ const ContactForm = () => {
             type="message"
             name="message"
             value={state.message}
-            rows="3"
-            placeholder="Enter your message"
             onChange={onInputChange}
           ></textarea>
         </label>

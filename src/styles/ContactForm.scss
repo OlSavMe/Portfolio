@@ -1,0 +1,93 @@
+@import "./indexStyle.scss";
+
+.contact-form {
+  margin: 10%;
+  color: #666666;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  @include phone {
+    margin: 5rem 5% 5%;
+    font-size: 1rem;
+  }
+
+  p {
+    margin: 0;
+    padding: 0 0 3rem;
+    font-size: 1.5rem;
+
+    @include phone {
+      font-size: 1rem;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 90%;
+    max-width: 60em;
+
+    @include phone {
+      max-width: 90%;
+    }
+
+    label {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      @include phone {
+        font-size: 1rem;
+      }
+    }
+
+    input:not([type="submit"]),
+    textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $yellow;
+      border-radius: 2px;
+      background-color: white;
+      font-size: 1.1rem;
+      padding: 10px;
+      outline: none;
+      margin-bottom: 2rem;
+
+      outline-width: 1px;
+    }
+
+    textarea {
+      width: 100%;
+      resize: vertical;
+      height: 150px;
+      margin-bottom: 25px;
+    }
+
+    input[type="submit"] {
+      color: #666666;
+      width: 200px;
+      background: rgb(249, 166, 2);
+      border-radius: 1px;
+      font-size: 1.2rem;
+      padding: 10px 0;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      outline: none;
+      border-color: none;
+      border-style: none;
+
+      @include phone {
+        font-size: 1rem;
+      }
+
+      &:hover {
+        box-shadow: 5px 15px 10px rgba(102, 102, 102, 0.7);
+      }
+
+      &:active {
+        box-shadow: 5px 15px 10px rgba(102, 102, 102, 0.7);
+      }
+    }
+  }
+}
