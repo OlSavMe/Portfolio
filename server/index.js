@@ -2,6 +2,12 @@ const path = require("path");
 const express = require("express");
 const app = express();
 const transporter = require("./config");
+// The Cloud Functions for Firebase SDK to create Cloud Functions and setup triggers.
+const functions = require("firebase-functions");
+
+// The Firebase Admin SDK to access Cloud Firestore.
+const admin = require("firebase-admin");
+admin.initializeApp();
 const dotenv = require("dotenv");
 dotenv.config();
 

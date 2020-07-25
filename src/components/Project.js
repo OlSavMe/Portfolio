@@ -20,17 +20,15 @@ const Project = (props) => {
   };
 
   return (
-    <div className="card">
+    <a href="#modal" onClick={toggleModal} className="card">
       <figure>
         <img src={picture} alt="project"></img>
         <figcaption>
-          {/* <a href={url} target="_blank" rel="noopener noreferrer"> */}
           <a href="#modal" onClick={toggleModal}>
             {" "}
             <h3>
               {title} <span>&rsaquo;&rsaquo;</span>
             </h3>
-            {/* <Modal show={show} hideModal={hideModal} /> */}
           </a>
         </figcaption>
       </figure>
@@ -48,7 +46,7 @@ const Project = (props) => {
           <p>{technology}</p>
         </Modal>
       )}
-    </div>
+    </a>
   );
 };
 export default Project;

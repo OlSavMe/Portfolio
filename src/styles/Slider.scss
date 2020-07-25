@@ -1,225 +1,237 @@
 @import "./indexStyle.scss";
 
 .slider {
-  display: flex;
-  flex-direction: column;
-  padding: 10%;
-  align-items: center;
-  justify-items: center;
+  margin: 15%;
+  position: relative;
+  height: 25rem;
+  .slide {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
 
-  @include phone {
-    padding: 20% 5%;
-  }
-  > p {
-    margin: 0;
-    font-size: 1.3rem;
-  }
-  .slides {
-    margin: 0 auto;
-    margin-top: 20px;
-    position: relative;
-    width: 80%;
-    height: 0;
-    padding-bottom: 40%;
-    user-select: none;
-    background-color: #1c1c1c;
-    box-shadow: 0 11px 22px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.24);
-
-    input {
-      display: none;
+    > h1 {
+      color: #ffff;
+      text-shadow: 2px 1px 1px #000;
     }
-    .slide_img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
 
-      > img {
-        width: inherit;
-        height: inherit;
-      }
-      .go {
-        width: 100%;
-        font-size: 1.5rem;
-        bottom: 20%;
-        height: 15px;
-        position: absolute;
-        text-align: center;
-        align-content: center;
-        z-index: 1;
-        > a {
-          min-width: 50px;
-          background-color: rgba(0, 0, 0, 0.9);
-          color: $yellow;
-          cursor: pointer;
-          text-decoration: none;
-          padding: 0.5rem 1.3rem;
-          border: solid 1px $yellow;
-          border-radius: 5px;
-
-          &:hover {
-            background-color: rgba(0, 0, 0, 1);
-            // color: #666666;
-            // border: solid 1px #666666;
-          }
-        }
-      }
-    }
-    .prev,
-    .next {
-      width: 12%;
-      height: inherit;
+    .picture {
       position: absolute;
       top: 0;
-      background-color: rgba(36, 36, 36, 0.3);
-      z-index: 99;
-      transition: 0.45s;
-      cursor: pointer;
-      text-align: center;
-    }
-
-    .next {
-      right: 0;
-    }
-    .prev {
       left: 0;
-    }
-
-    .prev:hover,
-    .next:hover {
-      transition: 0.3s;
-      background-color: rgba(249, 166, 2, 0.5);
-    }
-
-    .prev span,
-    .next span {
-      position: absolute;
-      width: 0px;
-      height: 0px;
-      border: solid 15px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    .prev span {
-      border-color: transparent #fff transparent transparent;
-      right: 35%;
-    }
-    .next span {
-      border-color: transparent transparent transparent #fff;
-      left: 35%;
-    }
-    .go {
       width: 100%;
-      font-size: 1.5rem;
-      bottom: 35%;
-      height: 15px;
-      position: absolute;
-      text-align: center;
-      align-content: center;
-      z-index: 99;
-      > a {
-        background-color: rgba(0, 0, 0, 0.4);
-        color: $yellow;
-        cursor: pointer;
-        text-decoration: none;
-        padding: 0.5rem 1.3rem;
-        border: solid 1px $yellow;
-        border-radius: 5px;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.8);
-        }
-      }
-    }
-    #nav_slide {
-      width: 100%;
-      bottom: 7%;
-      height: 11px;
-      position: absolute;
-      text-align: center;
-      z-index: 99;
-      cursor: default;
-
-      .dots {
-        top: -5px;
-        width: 15px;
-        height: 15px;
-        margin: 0 4px;
-        position: relative;
-        border-radius: 100%;
-        display: inline-block;
-        background-color: white;
-        transition: 0.4s;
-        cursor: pointer;
-      }
-
-      //   .dots:hover {
-      //     background: $yellow;
-      //   }
-    }
-
-    #i1:checked ~ #one,
-    #i2:checked ~ #two,
-    #i3:checked ~ #three,
-    #i4:checked ~ #four {
-      z-index: 9;
-      animation: scroll 1s ease-in-out;
-    }
-
-    #i1:checked ~ #nav_slide #dot1 {
-      background: $yellow;
-    }
-    #i2:checked ~ #nav_slide #dot2 {
-      background: $yellow;
-    }
-    #i3:checked ~ #nav_slide #dot3 {
-      background: $yellow;
-    }
-    #i4:checked ~ #nav_slide #dot4 {
-      background: $yellow;
-    }
-
-    @keyframes scroll {
-      0% {
-        opacity: 0.4;
-      }
-      100% {
-        opacity: 1;
-      }
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
     }
   }
 
-  // @media screen and (max-width: 685px) {
-  //   .container {
-  //     border: none;
-  //     width: $small_width;
-  //     height: 0;
-  //     padding-bottom: $small_height;
-
-  //     .slide_img {
-  //       .prev,
-  //       .next {
-  //         width: $small_nav_width;
-  //       }
-
-  //       .prev span,
-  //       .next span {
-  //         border: solid 12px;
-  //       }
-  //       .prev span {
-  //         border-color: transparent #fff transparent transparent;
-  //       }
-  //       .next span {
-  //         border-color: transparent transparent transparent #fff;
-  //       }
-  //     }
-
-  //     #nav_slide .dots {
-  //       width: 12px;
-  //       height: 12px;
-  //     }
-  //   }
-  // }
+  .slide.active {
+    opacity: 1;
+  }
 }
+
+// .slider {
+//   display: flex;
+//   flex-direction: column;
+//   padding: 10%;
+//   align-items: center;
+//   justify-items: center;
+
+//   @include phone {
+//     padding: 20% 5%;
+//   }
+//   > p {
+//     margin: 0;
+//     font-size: 1.3rem;
+//   }
+//   .slides {
+//     margin: 0 auto;
+//     margin-top: 20px;
+//     position: relative;
+//     width: 80%;
+//     height: 0;
+//     padding-bottom: 40%;
+//     user-select: none;
+//     background-color: #1c1c1c;
+//     box-shadow: 0 11px 22px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.24);
+
+//     input {
+//       display: none;
+//     }
+//     .slide_img {
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       z-index: -1;
+
+//       > img {
+//         width: inherit;
+//         height: inherit;
+//       }
+//       .go {
+//         width: 100%;
+//         font-size: 1.5rem;
+//         bottom: 20%;
+//         height: 15px;
+//         position: absolute;
+//         text-align: center;
+//         align-content: center;
+//         z-index: 1;
+//         > a {
+//           min-width: 50px;
+//           background-color: rgba(0, 0, 0, 0.9);
+//           color: $yellow;
+//           cursor: pointer;
+//           text-decoration: none;
+//           padding: 0.5rem 1.3rem;
+//           border: solid 1px $yellow;
+//           border-radius: 5px;
+
+//           &:hover {
+//             background-color: rgba(0, 0, 0, 1);
+//             // color: #666666;
+//             // border: solid 1px #666666;
+//           }
+//         }
+//       }
+//     }
+//     .prev,
+//     .next {
+//       width: 12%;
+//       height: inherit;
+//       position: absolute;
+//       top: 0;
+//       background-color: rgba(36, 36, 36, 0.3);
+//       z-index: 99;
+//       transition: 0.45s;
+//       cursor: pointer;
+//       text-align: center;
+//     }
+
+//     .next {
+//       right: 0;
+//     }
+//     .prev {
+//       left: 0;
+//     }
+
+//     .prev:hover,
+//     .next:hover {
+//       transition: 0.3s;
+//       background-color: rgba(249, 166, 2, 0.5);
+//     }
+
+//     .prev span,
+//     .next span {
+//       position: absolute;
+//       width: 0px;
+//       height: 0px;
+//       border: solid 15px;
+//       top: 50%;
+//       transform: translateY(-50%);
+//     }
+
+//     .prev span {
+//       border-color: transparent #fff transparent transparent;
+//       right: 35%;
+//     }
+//     .next span {
+//       border-color: transparent transparent transparent #fff;
+//       left: 35%;
+//     }
+
+//     #nav_slide {
+//       width: 100%;
+//       bottom: 7%;
+//       height: 11px;
+//       position: absolute;
+//       text-align: center;
+//       z-index: 99;
+//       cursor: default;
+
+//       .dots {
+//         top: -5px;
+//         width: 15px;
+//         height: 15px;
+//         margin: 0 4px;
+//         position: relative;
+//         border-radius: 100%;
+//         display: inline-block;
+//         background-color: white;
+//         transition: 0.4s;
+//         cursor: pointer;
+//       }
+
+//       //   .dots:hover {
+//       //     background: $yellow;
+//       //   }
+//     }
+
+//     #i0:checked ~ #s0,
+//     #i1:checked ~ #s1,
+//     #i2:checked ~ #s3,
+//     #i3:checked ~ #s4 {
+//       z-index: 9;
+//       animation: scroll 1s ease-in-out;
+//     }
+
+//     #i0:checked ~ #nav_slide #dot0 {
+//       background: $yellow;
+//     }
+//     #i1:checked ~ #nav_slide #dot1 {
+//       background: $yellow;
+//     }
+//     #i2:checked ~ #nav_slide #dot2 {
+//       background: $yellow;
+//     }
+//     #i3:checked ~ #nav_slide #dot3 {
+//       background: $yellow;
+//     }
+
+//     @keyframes scroll {
+//       0% {
+//         opacity: 0.4;
+//       }
+//       100% {
+//         opacity: 1;
+//       }
+//     }
+//   }
+
+//   // @media screen and (max-width: 685px) {
+//   .container {
+//     border: none;
+//     width: $small_width;
+//     height: 0;
+//     padding-bottom: $small_height;
+
+//     .slide_img {
+//       .prev,
+//       .next {
+//         width: $small_nav_width;
+//       }
+
+//       .prev span,
+//       .next span {
+//         border: solid 12px;
+//       }
+//       .prev span {
+//         border-color: transparent #fff transparent transparent;
+//       }
+//       .next span {
+//         border-color: transparent transparent transparent #fff;
+//       }
+//     }
+
+//     #nav_slide .dots {
+//       width: 12px;
+//       height: 12px;
+//     }
+//   }
+// }

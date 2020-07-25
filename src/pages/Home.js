@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Photo from "../components/Photo";
 import "../styles/Home.scss";
 import "../data/ProjectData";
-import { projectData } from "../data/ProjectData";
+import projectData from "../data/ProjectData";
 import Project from "../components/Project";
 import References from "../components/References";
 // import Modal from "../components/Modal";
