@@ -3,6 +3,7 @@ const projectData = [
     id: 1,
     title: "The Shortcut website",
     picture: "img/short.jpg",
+    bigpic: "img/big-short.jpg",
     description: "blslslslsls  lslslslsl  slslslsl",
     technology: "blslslslsls  lslslslsl  slslslsl",
     summary:
@@ -14,6 +15,7 @@ const projectData = [
     id: 2,
     title: "Current Portfoio site",
     picture: "img/cur.jpg",
+    bigpic: "img/big-cur.jpg",
     description: "blslslslsls  lslslslsl  slslslsl",
     summary: "blslslslsls",
     github: "https://github.com/OlSavMe/Current-CV-Website",
@@ -23,6 +25,7 @@ const projectData = [
     id: 3,
     title: "Earlier CV website",
     picture: "img/pr.jpg",
+    bigpic: "img/big-pr.jpg",
     description: "blslslslsls  lslslslsl  slslslsl",
     summary:
       "React, React Router, axios, GitHub API, React Material-UI, react-select, SCSS",
@@ -33,6 +36,7 @@ const projectData = [
     id: 4,
     title: "Server Programming project",
     picture: "img/manag.png",
+    bigpic: "img/manag.png",
     description: "Java SpringBoot",
     summary: "Java SpringBoot",
     github: "https://github.com/OlSavMe/Current-CV-Website",

@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/RepoCard.scss";
 
 const RepoCard = (props) => {
   const { html_url, name, description, homepage } = props;

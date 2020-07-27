@@ -85,13 +85,7 @@
   }
   .refer {
     grid-column: 1 / 3;
-    // font-size: 1rem;
 
-    // grid-area: refer;
-    // grid-column-start: 1;
-    // grid-column-end: 3;
-    // grid-row-start: 2;
-    // grid-row-end: 3;
     @include phone {
       grid-column: 1 / 2;
     }

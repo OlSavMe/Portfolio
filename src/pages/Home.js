@@ -4,21 +4,12 @@ import "../styles/Home.scss";
 import "../data/ProjectData";
 import projectData from "../data/ProjectData";
 import Project from "../components/Project";
-import References from "../components/References";
-// import Modal from "../components/Modal";
 
 function Home() {
-  // const [show, setShow] = useState(false);
-
-  // const toggleModal = (e) => {
-  //   setShow(!show);
-  // };
-
   return (
     <div className="container">
       <div className="hero">
         <Photo />
-
         <div className="scroll">
           Selected Projects
           <a href="#projects" className="indicator">

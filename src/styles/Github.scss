@@ -3,7 +3,7 @@
 .github {
   display: flex;
   flex-direction: column;
-  padding: 5% 10% 0;
+  padding: 2rem 7%;
 
   .repolist {
     display: flex;
@@ -30,8 +30,8 @@
         font-size: 1.7rem;
         padding: 1.5rem;
         background-color: white;
-        border: solid rgba(0, 0, 0, 0.5) 1px;
-        box-shadow: $yellow 4px 4px;
+        @include card-border;
+
         @include phone {
           margin: 2% 1%;
           font-size: 1.2em;

@@ -20,7 +20,10 @@ const ContactForm = () => {
         setState({ name: "", email: "", message: "" });
       })
       .catch(() => {
-        setResult({ success: false, message: "Something went wrong" });
+        setResult({
+          success: false,
+          message: "Something went wrong. Please try again.",
+        });
       });
   };
 

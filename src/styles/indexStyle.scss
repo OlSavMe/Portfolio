@@ -8,6 +8,23 @@
   }
 }
 
+@mixin user-select-disabled {
+  user-select: none;
+  -moz-user-select: none; /* Mozilla */
+  -webkit-user-select: none; /* WebKit */
+  -ms-user-select: none; /* Microsoft */
+}
+
+@mixin card-border {
+  border: solid rgba(0, 0, 0, 0.5) 1px;
+  box-shadow: $yellow 4px 4px;
+}
+
+@mixin card-border-up {
+  border: solid $yellow 1px;
+  // box-shadow: $yellow 2px -2px 2px -2px;
+}
+
 @mixin zero-margin {
   left: 0;
   right: 0;

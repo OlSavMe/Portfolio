@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import "../styles/Github.scss";
 import ButtonGroup from "../components/ButtonGroup";
-import RepoCard from "../components/repos/RepoCard";
 import { All, Filtered, Deployed } from "../components/repos/FilteredRepos";
 
 import { Context } from "../Context";

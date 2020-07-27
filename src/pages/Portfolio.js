@@ -7,7 +7,10 @@ function Portfolio() {
   return (
     <div className="portfolio-container">
       <section className="projects-section">
-        <SlideWrapper />
+        <div className="slider-container">
+          <SlideWrapper />
+        </div>
+
         <div className="scroll">
           GitHub Repositories
           <a href="#github-container" className="indicator">
