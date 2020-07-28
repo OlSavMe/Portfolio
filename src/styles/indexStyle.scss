@@ -10,6 +10,7 @@
 
 @mixin user-select-disabled {
   user-select: none;
+  /* Mozilla*/
   -moz-user-select: none; /* Mozilla */
   -webkit-user-select: none; /* WebKit */
   -ms-user-select: none; /* Microsoft */
@@ -20,9 +21,16 @@
   box-shadow: $yellow 4px 4px;
 }
 
-@mixin card-border-up {
-  border: solid $yellow 1px;
-  // box-shadow: $yellow 2px -2px 2px -2px;
+@mixin basic-button-style {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  cursor: pointer;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 @mixin zero-margin {

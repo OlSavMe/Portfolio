@@ -32,15 +32,17 @@ const References = () => {
             </li>
             <li class="anim2">
               <div class="quote">
-                I worked with Olga on the development of new website for The
+                I worked with Olga on the development of the new website for The
                 Shortcut community. Olga proved to be very methodological when
                 faced with unfamiliar technologies, which was very motivating
                 for me. Because of her can-do attitude, I never doubted the
-                success of our project. Aside from Olga’s solid technical
-                skillset, I respect her rational ways of managing disputes and
-                her careful attention to feedback. Being Olga’s teammate, I
-                always knew she had my back. I’d recommend Olga to anyone
-                looking to add to their team of software engineers!
+                success of our project. Olga monitored the team’s GitHub
+                collaboration ensuring timely and verified merges. Aside from
+                Olga’s solid technical skillset, I respect her rational ways of
+                managing disputes and her careful attention to feedback. Being
+                Olga’s teammate, I always knew she had my back. I’d recommend
+                Olga to anyone looking to add to their team of software
+                engineers!
               </div>
               <div class="source">- Alina Ilina, Web Developer</div>
             </li>
@@ -68,15 +70,17 @@ const References = () => {
             </li>
             <li class="anim4">
               <div class="quote">
-                I worked with Olga on the development of new website for The
+                I worked with Olga on the development of the new website for The
                 Shortcut community. Olga proved to be very methodological when
                 faced with unfamiliar technologies, which was very motivating
                 for me. Because of her can-do attitude, I never doubted the
-                success of our project. Aside from Olga’s solid technical
-                skillset, I respect her rational ways of managing disputes and
-                her careful attention to feedback. Being Olga’s teammate, I
-                always knew she had my back. I’d recommend Olga to anyone
-                looking to add to their team of software engineers!
+                success of our project. Olga monitored the team’s GitHub
+                collaboration ensuring timely and verified merges. Aside from
+                Olga’s solid technical skillset, I respect her rational ways of
+                managing disputes and her careful attention to feedback. Being
+                Olga’s teammate, I always knew she had my back. I’d recommend
+                Olga to anyone looking to add to their team of software
+                engineers!
               </div>
               <div class="source">- Alina Ilina, Web Developer</div>
             </li>

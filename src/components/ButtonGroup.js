@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/ButtonGroup.scss";
 
-const ButtonGroup = ({ setKeyword }) => {
+const ButtonGroup = ({ setKeyword, props }) => {
   const buttons = [
     { value: "all", id: "b1", btn: "i1", name: "All GitHub Repos" },
     { value: "deployed", id: "b2", btn: "i2", name: "Only Deployed" },
@@ -9,21 +9,27 @@ const ButtonGroup = ({ setKeyword }) => {
     { value: "Java", id: "b4", btn: "i4", name: "Java" },
     { value: "HTML", id: "b5", btn: "i5", name: "CSS & JQuery & Bootstrap" },
   ];
+  const [selected, setSelected] = useState("b1");
+
+  const handleSelected = (id) => {
+    setSelected(id);
+  };
 
   return (
     <div className="button-group">
       <ul>
-        {buttons.map((i) => (
+        {buttons.map((item) => (
           <li
-            // onClick={() => click(`${i.id}`)}
-            // active={`${i.id}`}
-            // className={active ? "active" : ""}
-            value={i.value}
-            id={i.btn}
-            key={i.btn}
-            onClick={() => setKeyword(`${i.value}`)}
+            value={item.value}
+            id={item.id}
+            key={item.id}
+            onClick={() => {
+              setKeyword(`${item.value}`);
+              handleSelected(item.id);
+            }}
+            className={selected === item.id ? "selected" : ""}
           >
-            <label for={i.id}>{i.name}</label>
+            <label for={item.id}>{item.name}</label>
           </li>
         ))}
       </ul>

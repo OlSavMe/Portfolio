@@ -16,8 +16,7 @@
     margin: 0;
     padding: 0 0 3rem;
     font-size: 1.6rem;
-    font-weight: 900;
-    color: $yellow;
+    color: #666666;
 
     @include phone {
       font-size: 1rem;
@@ -55,7 +54,6 @@
       padding: 10px;
       outline: none;
       margin-bottom: 2rem;
-
       outline-width: 1px;
     }
 
@@ -67,14 +65,14 @@
     }
 
     input[type="submit"] {
+      @include basic-button-style;
       color: #666666;
       width: 200px;
-      background: rgba(249, 166, 2, 0.4);
+      background: rgba(249, 166, 2, 0.8);
       border-radius: 1px;
       font-size: 1.2rem;
       padding: 10px 0;
-
-      transition: all 0.3s ease 0s;
+      transition: all 1s ease-in-out;
       outline: none;
       border-color: none;
       border-style: none;

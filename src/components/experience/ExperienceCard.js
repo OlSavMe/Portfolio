@@ -4,7 +4,7 @@ const ExpCard = (props) => {
   const { company, period, desc, link, desctwo, position, id } = props;
 
   return (
-    <div className="exp-card">
+    <div className="exp-card" id={id}>
       <h2>{position}</h2>
       <h2>
         {" "}

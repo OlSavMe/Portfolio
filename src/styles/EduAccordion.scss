@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #666;
 
   .unis {
     margin: 10rem 10% 0;
@@ -18,6 +19,7 @@
     margin: 3% 7%;
     width: 80%;
     position: relative;
+    font-family: inherit;
 
     @include phone {
       margin: 3% 0;
@@ -25,40 +27,30 @@
     }
 
     h2 {
-      font-size: 1.5rem;
-      font-weight: 900;
+      font-size: 1.3rem;
       margin: 3%;
-      color: $yellow;
     }
 
     .course_section {
       margin: 0.7rem;
       display: flex;
       flex-direction: column;
+      font-family: inherit;
 
       .course_header {
+        @include basic-button-style;
         background-color: white;
-        // background-color: #eee;
-
-        cursor: pointer;
         padding: 18px;
         display: flex;
         align-items: center;
-        @include card-border-up;
+        border: solid $yellow 1px;
         outline: none;
-        // border: none;
-        // transition: background-color 0.6s ease;
         text-align: left;
-
-        // &:hover,
-        // &.active {
-        //   // background-color: #dbdbdb;
-        // }
+        color: #666;
 
         span {
           width: 90%;
-          font-size: 1.1rem;
-          color: #666;
+          font-size: 1.3rem;
 
           a {
             color: $yellow;
@@ -92,10 +84,7 @@
           display: inline-block;
           font-weight: 400;
           padding: 0.7rem;
-        }
-
-        a {
-          color: #000;
+          color: #666;
         }
       }
     }

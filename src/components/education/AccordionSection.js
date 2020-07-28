@@ -12,10 +12,6 @@ const AccordionSection = (props) => {
     setHeight(unfold ? "0px" : `${details.current.scrollHeight}px`);
   };
 
-  // const toggleHeight = () => {
-  //   setHeight(unfold ? "0px" : `${details.current.scrollHeight}px`);
-  // };
-
   return (
     <div className="course_section">
       <button className="course_header" onClick={toggleUnfold}>
