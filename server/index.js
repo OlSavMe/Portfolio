@@ -7,6 +7,11 @@ const path = require("path");
 const app = express();
 port = process.env.PORT || 3030;
 
+// const directory = process.env.NODE_ENV === "development" ? "public" : "build";
+// const buildPath = path.join(__dirname, "..", directory);
+
+console.log(process.env.NODE_ENV);
+
 const buildPath = path.join(__dirname, "..", "build");
 app.use(express.json());
 app.use(express.static(buildPath));
