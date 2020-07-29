@@ -7,13 +7,13 @@ const EduAccordion = () => {
   return (
     <div className="edu-container">
       <h2>
-        Completed Haaga-Helia Courses in Software Development, ICT Infra and
+        Haaga-Helia Completed Courses in Software Development, ICT Infra and
         Languages
       </h2>
       {educationData.map((item) => (
         <AccordionSection key={item.id} {...item} />
       ))}
-      <h2>Other Courses</h2>
+      <h2>Other Completed Courses</h2>
       {otherCoursesData.map((item) => (
         <AccordionSection key={item.id} {...item} />
       ))}

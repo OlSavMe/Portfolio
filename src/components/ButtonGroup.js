@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/ButtonGroup.scss";
 
-const ButtonGroup = ({ setKeyword, props }) => {
+const ButtonGroup = ({ setKeyword }) => {
   const buttons = [
     { value: "all", id: "b1", btn: "i1", name: "All GitHub Repos" },
     { value: "deployed", id: "b2", btn: "i2", name: "Only Deployed" },

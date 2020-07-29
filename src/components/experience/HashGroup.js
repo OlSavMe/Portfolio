@@ -1,26 +1,38 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const HashGroup = () => {
   const buttons = [
-    { value: "theshortcut", id: 1 },
-    { value: "frontend", id: 1 },
-    { value: "webscale", id: 2 },
-    { value: "UX", id: 3 },
-    { value: "translator", id: 4 },
-    { value: "SEO", id: 5 },
+    { value: "TheShortcut", id: 1, btn: 1 },
+    { value: "FrontendDev", id: 1, btn: 2 },
+    { value: "WebscaleOy", id: 2, btn: 3 },
+    { value: "UXDesign", id: 3, btn: 4 },
+    { value: "EnglishTranslator", id: 5, btn: 5 },
+    { value: "SEO", id: 6, btn: 6 },
   ];
+
+  const [selected, setSelected] = useState("");
+
+  const handleSelected = (btn) => {
+    setSelected(btn);
+  };
 
   return (
     <div className="hash-group">
       <ul>
         {buttons.map((i) => (
-          <li key={i.value}>
-            <a href={`/exp/${i.id}`}> #{i.value}</a>
-
-            {/* <Link to={`/exp#${i.id}`} activeClassName="active">
+          <li>
+            <AnchorLink
+              key={i.btn}
+              id={i.ibtn}
+              onClick={() => {
+                handleSelected(i.btn);
+              }}
+              className={selected === i.btn ? "selected" : ""}
+              href={`#${i.id}`}
+            >
               #{i.value}
-            </Link> */}
+            </AnchorLink>
           </li>
         ))}
       </ul>

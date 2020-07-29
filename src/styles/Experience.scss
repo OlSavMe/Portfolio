@@ -28,7 +28,7 @@
             text-decoration: none;
 
             &:hover,
-            &.active {
+            &.selected {
               color: $yellow;
             }
           }

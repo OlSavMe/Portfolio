@@ -1,0 +1,30 @@
+[debug] [2020-07-29T21:50:08.493Z] ----------------------------------------------------------------------
+[debug] [2020-07-29T21:50:08.496Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-07-29T21:50:08.496Z] CLI Version:   8.6.0
+[debug] [2020-07-29T21:50:08.496Z] Platform:      darwin
+[debug] [2020-07-29T21:50:08.496Z] Node Version:  v12.17.0
+[debug] [2020-07-29T21:50:08.497Z] Time:          Thu Jul 30 2020 00:50:08 GMT+0300 (Eastern European Summer Time)
+[debug] [2020-07-29T21:50:08.498Z] ----------------------------------------------------------------------
+[debug] [2020-07-29T21:50:08.498Z] 
+[debug] [2020-07-29T21:50:08.509Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-29T21:50:08.509Z] > authorizing via signed-in user
+[debug] [2020-07-29T21:50:08.509Z] [iam] checking project savkaportfolio for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-07-29T21:50:08.512Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/savkaportfolio:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-07-29T21:50:09.333Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 29 Jul 2020 21:50:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=736","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-29T21:50:09.335Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/savkaportfolio/serviceAccounts/savkaportfolio@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2020-07-29T21:50:10.290Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 29 Jul 2020 21:50:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-29T21:50:10.292Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/savkaportfolio  
+ 
+[debug] [2020-07-29T21:50:10.535Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 29 Jul 2020 21:50:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-29T21:50:10.615Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:120:11)
+    at Object.join (path.js:1039:7)
+    at Object.checkFunctionsSDKVersion [as fn] (/usr/local/lib/node_modules/firebase-tools/lib/checkFirebaseSDKVersion.js:34:28)
+    at Command.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/command.js:160:30)
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/command.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.

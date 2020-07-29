@@ -19,7 +19,7 @@ const AccordionSection = (props) => {
           {title}{" "}
           {url ? (
             <a href={url} target="_blank" rel="noopener noreferrer">
-              Course Project
+              View my project
             </a>
           ) : null}
         </span>
