@@ -1,25 +1,15 @@
 const express = require("express");
-// const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 const dotenv = require("dotenv");
 const OAuth2 = google.auth.OAuth2;
 const path = require("path");
-// const PORT = process.env.PORT || 3000;
 const app = express();
 
 const buildPath = path.join(__dirname, "..", "build");
 app.use(express.json());
 app.use(express.static(buildPath));
-
-// app.use(bodyParser.json());
 dotenv.config();
-
-// app.get("/", function (req, res) {
-//   res.send({
-//     message: "Default route in email tutorial project",
-//   });
-// });
 
 const oauth2Client = new OAuth2(
   process.env.clientID,
