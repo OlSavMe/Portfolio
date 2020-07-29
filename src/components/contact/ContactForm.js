@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import { Form, Button } from "react-bootstrap";
 import axios from "axios";
 import "../../styles/ContactForm.scss";
+import { URI } from "../../urls";
 
 const ContactForm = () => {
   const [result, setResult] = useState(null);
@@ -14,7 +15,7 @@ const ContactForm = () => {
   const sendEmail = (event) => {
     event.preventDefault();
     axios
-      .post("/send", { ...state })
+      .post(`${URI}/send`, { ...state })
       .then((response) => {
         setResult(response.data);
         setState({ name: "", email: "", message: "" });

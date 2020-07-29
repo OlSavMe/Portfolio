@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const OAuth2 = google.auth.OAuth2;
 const path = require("path");
 const app = express();
+port = process.env.PORT || 3030;
 
 const buildPath = path.join(__dirname, "..", "build");
 app.use(express.json());
@@ -70,6 +71,6 @@ app.post("/send", (req, res) => {
   });
 });
 
-app.listen(3030, () => {
-  console.log("server start on port 3030");
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}!`);
 });
