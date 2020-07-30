@@ -3,30 +3,23 @@ import "../styles/Photo.scss";
 
 function Photo(props) {
   return (
-    <div class="photos">
-      <section class="item">
+    <div class="photo-section">
+      <section class="photo-item">
         {" "}
         <figure>
           <img src={require("../assets/pic.jpeg")} alt="me"></img>
           <figcaption>Olga Savka</figcaption>
         </figure>
       </section>
-      {/* <article className="about"> */}{" "}
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur.
+        Hi! My name is Olga Savka. I am a Web Developer living in Helsinki. I
+        enjoy creating eye-catching and user-friendly applications. I have
+        hands-on experience in app building using JavaScript, Reac.js (v16.8),
+        React Native, SASS, JQuery, REST API, headless CMS, Node.js, Express,
+        Google Cloud tools, SQL. In 2020 I am graduating from Haaga Helia UAS as
+        a Software Developer. Due to my previous Tech Translator’s career, I
+        have substantial experience of multicultural teamwork.
       </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur.
-      </p>
-      {/* </article> */}
     </div>
   );
 }

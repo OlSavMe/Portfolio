@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Portfolio, Education, Home, Experience, Contact } from "./pages/index";
+import { Portfolio, Education, Home, Experience } from "./pages/index";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Burger from "./components/nav/Burger";
 import Menu from "./components/nav/Menu";
@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/edu" component={Education} />
         <Route path="/exp" component={Experience} />
-        <Route path="/contact" component={Contact} />
+        {/* <Route path="/contact" component={Contact} /> */}
       </Switch>
       <Footer />
     </Router>

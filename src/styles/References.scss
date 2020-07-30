@@ -1,7 +1,7 @@
 @import "./indexStyle.scss";
 
 .content-slider {
-  width: 100%;
+  width: 80%;
   height: 360px;
   color: black;
   position: relative;
@@ -29,10 +29,17 @@
     overflow: visible;
     position: relative;
 
-    @include phone {
+    @include mobile {
       width: 250px;
     }
 
+    @include ipad {
+      width: 350px;
+    }
+
+    @include tablet {
+      width: 600px;
+    }
     .mask {
       overflow: hidden;
       height: 350px;
@@ -43,8 +50,16 @@
         margin: 0;
         padding: 0;
         position: relative;
-        @include phone {
+        @include mobile {
           font-size: 0.7rem;
+        }
+
+        @include ipad {
+          font-size: 0.8rem;
+        }
+
+        @include tablet {
+          font-size: 1rem;
         }
 
         li {

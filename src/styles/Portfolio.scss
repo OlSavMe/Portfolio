@@ -3,28 +3,17 @@
 @include scrollbars;
 
 .portfolio-container {
-  display: flex;
-  flex-direction: column;
-  color: #666666;
-
-  @include phone {
-    padding: 0.5rem;
-  }
+  @include main-container;
 
   .projects-section {
     // height: 100vh;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
 
     .slider-container {
       display: flex;
-      align-items: center;
-      justify-items: center;
       justify-content: center;
     }
 
-    @include phone {
+    @include mobile {
       height: auto;
     }
 

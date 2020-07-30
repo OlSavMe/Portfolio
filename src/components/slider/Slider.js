@@ -49,7 +49,7 @@ const Slider = ({ slides }) => {
           //for accessability reasons each non-active element is hidden
           aria-hidden={index !== current}
         >
-          <span>{`${index + 1}/${length}`}</span>
+          <span id="count">{`${index + 1}/${length}`}</span>
           <figcaption>
             <a href="#modal" onClick={toggleModal}>
               {" "}

@@ -99,7 +99,7 @@
   .navigation {
     font-size: 1.2rem;
 
-    @include phone {
+    @include mobile {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;

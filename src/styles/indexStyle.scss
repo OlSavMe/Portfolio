@@ -33,47 +33,12 @@
   -moz-appearance: none;
 }
 
-// @mixin zero-margin {
-//   left: 0;
-//   right: 0;
-//   top: 0;
-// }
-
-// @mixin max-width {
-//   width: 100%;
-// }
-
-// @mixin max-height-vh {
-//   height: 100%;
-// }
-
-// @mixin flex-col-nowrap {
-//   display: flex;
-//   flex-direction: column;
-//   flex-wrap: nowrap;
-// }
-
-// @mixin flex-col-wrap {
-//   display: flex;
-//   flex-direction: column;
-//   flex-wrap: wrap;
-// }
-
-// @mixin flex-row-wrap {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-// }
-
-// @mixin flex-row-nowrap {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: nowrap;
-// }
-
-// @mixin transp-background {
-//   background-color: transparent;
-// }
+@mixin main-container {
+  display: flex;
+  flex-direction: column;
+  color: #666666;
+  padding: 0.5rem;
+}
 
 // responsiveness
 @mixin phone {
@@ -94,6 +59,18 @@
   }
 }
 
+@mixin mobile {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    @content;
+  }
+}
+
 @mixin tablet-landscape {
   @media only screen and (min-width: 1024px) and (max-width: 1199px) {
     @content;
@@ -106,9 +83,41 @@
   }
 }
 
+@mixin landscape {
+  @media only screen and (max-height: 650px) {
+    @content;
+  }
+}
+
 @mixin big-desktop {
   @media only screen and (min-width: 1800px) {
     @content;
+  }
+}
+
+//  responsiveness breakpoint values
+$breakpoints: (
+  mobile: 480px,
+  ipad: 769px,
+  tablet: 1024px,
+  tablet-landscape: 1200px,
+  desktop: 1800px,
+);
+
+//  mixin to print out media queries
+@mixin media($keys...) {
+  @each $key in $keys {
+    @media (max-width: map-get($breakpoints, $key)) {
+      @content;
+    }
+  }
+}
+
+@mixin min-media($keys...) {
+  @each $key in $keys {
+    @media (min-width: map-get($breakpoints, $key)) {
+      @content;
+    }
   }
 }
 
@@ -123,6 +132,27 @@
   }
 }
 
+@keyframes animate-arrow {
+  0% {
+    border-color: #f9a602;
+    transform: translate(0, 0);
+  }
+  50% {
+    border-color: #f9a602;
+    transform: translate(5px, 5px);
+  }
+
+  50% {
+    border-color: #f3d18b;
+    transform: translate(5px, 5px);
+  }
+  100% {
+    border-color: white;
+    transform: translate(0, 0);
+  }
+}
+
 // palette
 $yellow: #f9a602;
 $yellowrgb: rgb(249, 166, 2);
+$textColor: #666;

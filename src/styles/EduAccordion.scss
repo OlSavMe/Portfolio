@@ -1,10 +1,8 @@
 @import "./indexStyle.scss";
 
 .edu-main {
-  display: flex;
-  flex-direction: column;
+  @include main-container;
   align-items: center;
-  color: #666;
 
   .unis {
     margin: 10rem 10% 0;

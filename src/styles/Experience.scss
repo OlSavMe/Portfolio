@@ -1,8 +1,7 @@
 @import "./indexStyle.scss";
 
 .exp-container {
-  display: flex;
-  flex-direction: column;
+  @include main-container;
   align-items: center;
 
   #work {

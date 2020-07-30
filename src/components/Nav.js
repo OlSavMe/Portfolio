@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../styles/Nav.scss";
+import { linksData } from "../data/LinksData";
 import { NavLink } from "react-router-dom";
 
 const Nav = () => {
@@ -18,7 +19,6 @@ const Nav = () => {
       }
 
       prevPosY.current = currentPosY;
-      // console.log(upScroll, currentPosY);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -26,15 +26,8 @@ const Nav = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [upScroll]);
 
-  const links = [
-    { name: "Portfolio", to: "/portfolio" },
-    { name: "Experience", to: "/exp" },
-    { name: "Education", to: "/edu" },
-    { name: "Contact", to: "/contact" },
-  ];
-
   const NavLinks = () =>
-    links.map((link, index) => (
+    linksData.slice(1).map((link, index) => (
       <NavLink key={index} to={link.to} activeClassName="selectedLink">
         {link.name}
       </NavLink>

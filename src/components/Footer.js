@@ -1,18 +1,12 @@
 import React from "react";
 import "../styles/Footer.scss";
 import References from "./References";
+import { linksData } from "../data/LinksData";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
-  const links = [
-    { name: "Portfolio", to: "/portfolio" },
-    { name: "Experience", to: "/exp" },
-    { name: "Education", to: "/edu" },
-    { name: "Contact", to: "/contact" },
-  ];
-
   const NavLinks = () =>
-    links.map((link, index) => (
+    linksData.slice(1).map((link, index) => (
       <NavLink key={index} to={link.to} activeClassName="selectedLink">
         {link.name}
       </NavLink>
