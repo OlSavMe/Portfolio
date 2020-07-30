@@ -6,14 +6,14 @@ import AccordionSection from "./AccordionSection";
 const EduAccordion = () => {
   return (
     <div className="edu-container">
-      <h2>
+      <h3>
         Haaga-Helia Completed Courses in Software Development, ICT Infra and
         Languages
-      </h2>
+      </h3>
       {educationData.map((item) => (
         <AccordionSection key={item.id} {...item} />
       ))}
-      <h2>Other Completed Courses</h2>
+      <h3>Other Completed Courses</h3>
       {otherCoursesData.map((item) => (
         <AccordionSection key={item.id} {...item} />
       ))}

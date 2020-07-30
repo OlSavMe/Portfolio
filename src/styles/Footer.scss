@@ -10,40 +10,21 @@
   grid-gap: 2rem;
   border-top: outset;
 
-  @include phone {
-    grid-template-columns: minmax(0, 1fr);
-    padding: 1rem;
-    grid-gap: 1rem;
-
-    align-items: end;
-  }
-
-  @include tablet {
+  @include media(mobile, ipad, tablet, tablet-landscape) {
     grid-template-columns: minmax(0, 1fr);
     padding: 1rem;
     grid-gap: 1rem;
     align-items: end;
-  }
-
-  @include tablet-landscape {
-    grid-template-columns: minmax(0, 1fr);
-    padding: 1rem;
-    grid-gap: 1rem;
-
     justify-items: center;
-    align-items: end;
   }
 
   .contact {
     > a {
       text-decoration: none;
       color: black;
-      padding: 1rem;
+      padding: 0.9rem;
       font-size: 1.3rem;
       font-weight: 1000;
-      @include phone {
-        padding: 0.5rem;
-      }
 
       img {
         height: 50px;
@@ -55,23 +36,28 @@
           }
         }
 
-        @include phone {
+        @include mobile {
           height: 20px;
         }
+        @include ipad {
+          height: 30px;
+        }
         &:nth-child(4) {
-          @include phone {
+          @include mobile {
             display: block;
           }
         }
       }
       &:nth-child(4) {
         > span {
-          // background: -webkit-linear-gradient(rgb(248, 203, 2), rgb(3, 148, 245));
           background: linear-gradient(0.25turn, #3f87a6, $yellow);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
-          @include phone {
+          @include mobile {
+            display: none;
+          }
+          @include ipad {
             display: none;
           }
         }

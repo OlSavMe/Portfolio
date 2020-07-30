@@ -32,7 +32,7 @@ const Footer = () => {
           <img src={require("../assets/in.jpg")} alt="linkedin-icon" />
         </a>
         <a
-          href="https://github.com/OlSavMe"
+          href="https://www.youtube.com/channel/UCurdVm5AZAPTOMF4vr2yTVw"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -5,11 +5,20 @@
   align-items: center;
 
   .unis {
-    margin: 10rem 10% 0;
+    margin: 10rem 0 0;
+    width: 80%;
     font-size: 1.1rem;
-    span {
-      color: $yellow;
-      margin-right: 1rem;
+    h3 {
+      margin-left: 18px;
+      span {
+        margin-right: 1%;
+        color: $yellow;
+      }
+    }
+
+    @include media(mobile, ipad) {
+      width: 90%;
+      font-size: 1rem;
     }
   }
 
@@ -18,19 +27,20 @@
     width: 80%;
     position: relative;
     font-family: inherit;
+    font-size: 1.1rem;
 
-    @include phone {
-      margin: 3% 0;
+    @include media(mobile, ipad) {
       width: 90%;
+      font-size: 1rem;
     }
 
-    h2 {
-      font-size: 1.3rem;
-      margin: 3%;
+    h3 {
+      // font-size: 1.3rem;
+      margin-left: 18px;
     }
 
     .course_section {
-      margin: 0.7rem;
+      margin: 0.7rem 0;
       display: flex;
       flex-direction: column;
       font-family: inherit;
@@ -49,6 +59,10 @@
         span {
           width: 90%;
           font-size: 1.3rem;
+          @include media(mobile, ipad) {
+            width: 90%;
+            font-size: 1.1rem;
+          }
 
           a {
             color: $yellow;

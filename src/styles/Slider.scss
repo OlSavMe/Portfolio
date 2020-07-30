@@ -11,10 +11,16 @@
     height: 45rem;
   }
 
-  @include phone {
+  @include media(mobile, ipad) {
     width: 100%;
-    height: 18rem;
-    margin: 18% 2%;
+    height: 20rem;
+    margin: 20% 2%;
+  }
+
+  @include tablet {
+    width: 90%;
+    height: 25rem;
+    margin: 10% 0;
   }
 
   button {
@@ -84,7 +90,7 @@
           font-size: 1.5rem;
           font-weight: bolder;
           margin: 0;
-          @include phone {
+          @include mobile {
             font-size: 1rem;
           }
         }
