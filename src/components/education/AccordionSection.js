@@ -26,6 +26,7 @@ const AccordionSection = (props) => {
         <img
           className={unfold ? " pic unfold" : "pic"}
           src={require("../../assets/down.png")}
+          alt="tick"
         ></img>
       </button>
       <div ref={details} style={{ maxHeight: `${height}` }} className="details">

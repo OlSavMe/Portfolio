@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Photo.scss";
+import "../styles/componentStyles/Photo.scss";
 
 function Photo(props) {
   return (
@@ -16,9 +16,11 @@ function Photo(props) {
         enjoy creating eye-catching and user-friendly applications. I have
         hands-on experience in app building using JavaScript, Reac.js (v16.8),
         React Native, SASS, JQuery, REST API, headless CMS, Node.js, Express,
-        Google Cloud tools, SQL. In 2020 I am graduating from Haaga Helia UAS as
-        a Software Developer. Due to my previous Tech Translator’s career, I
-        have substantial experience of multicultural teamwork.
+        Google Cloud tools, SQL, CI/CD pipelines and UX prototyping. I've been
+        working in multidisciplinary Agile teams within several web development
+        projects. In 2020, I am graduating from Haaga Helia UAS as a Software
+        Developer. Due to my previous Tech Translator’s career, I have
+        substantial experience of international teamwork.
       </p>
     </div>
   );

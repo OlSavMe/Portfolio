@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/Menu.scss";
+import "../../styles/componentStyles/Menu.scss";
 import { linksData } from "../../data/LinksData";
 import { Link } from "react-router-dom";
 

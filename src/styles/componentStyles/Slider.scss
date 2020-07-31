@@ -1,4 +1,4 @@
-@import "./indexStyle.scss";
+@import "../indexStyle.scss";
 
 .slider {
   display: flex;
@@ -107,7 +107,7 @@
       z-index: 1;
     }
 
-    .picture {
+    .screenshot {
       position: absolute;
       top: 0;
       left: 0;

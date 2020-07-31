@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/ButtonGroup.scss";
+import "../styles/componentStyles/ButtonGroup.scss";
 
 const ButtonGroup = ({ setKeyword }) => {
   const buttons = [

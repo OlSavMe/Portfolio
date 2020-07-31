@@ -1,4 +1,4 @@
-@import "./indexStyle.scss";
+@import "../indexStyle.scss";
 
 main {
   top: 1rem;
@@ -6,10 +6,6 @@ main {
   position: fixed;
   z-index: 400;
   transition: all 0.5s linear;
-
-  // @include phone {
-  //   right: 0;
-  // }
 
   .logo {
     padding: 2px;

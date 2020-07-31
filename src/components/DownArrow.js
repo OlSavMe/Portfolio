@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/DownArrow.scss";
+import "../styles/componentStyles/DownArrow.scss";
 
 const DownArrow = (props) => {
   return (

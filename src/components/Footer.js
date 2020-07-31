@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Footer.scss";
+import "../styles/componentStyles/Footer.scss";
 import References from "./References";
 import { linksData } from "../data/LinksData";
 import { NavLink } from "react-router-dom";

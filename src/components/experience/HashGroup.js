@@ -9,6 +9,7 @@ const HashGroup = () => {
     { value: "UXDesign", id: 3, btn: 4 },
     { value: "EnglishTranslator", id: 5, btn: 5 },
     { value: "SEO", id: 6, btn: 6 },
+    { value: "e-commerce", id: 6, btn: 6 },
   ];
 
   const [selected, setSelected] = useState("");

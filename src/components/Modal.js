@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Modal.scss";
+import "../styles/componentStyles/Modal.scss";
 
 function Modal(props) {
   const toggleModal = props.toggleModal;

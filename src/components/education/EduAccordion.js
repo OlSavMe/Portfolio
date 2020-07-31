@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import "../../styles/EduAccordion.scss";
 import { educationData, otherCoursesData } from "../../data/EducationData";
 import AccordionSection from "./AccordionSection";

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "../styles/References.scss";
+import React from "react";
+import "../styles/componentStyles/References.scss";
 
 const References = () => {
   return (

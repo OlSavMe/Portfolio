@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Project.scss";
+import "../styles/componentStyles/Project.scss";
 import Modal from "./Modal";
 
 const Project = (props) => {

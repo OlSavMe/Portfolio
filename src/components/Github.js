@@ -1,5 +1,5 @@
-import React, { useContext, useState, useEffect } from "react";
-import "../styles/Github.scss";
+import React, { useContext, useState } from "react";
+import "../styles/componentStyles/Github.scss";
 import ButtonGroup from "../components/ButtonGroup";
 import { All, Filtered, Deployed } from "../components/repos/FilteredRepos";
 

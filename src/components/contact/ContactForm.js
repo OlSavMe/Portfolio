@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 // import { Form, Button } from "react-bootstrap";
 import axios from "axios";
-import "../../styles/ContactForm.scss";
-import { URI } from "../../urls";
+import "../../styles/componentStyles/ContactForm.scss";
 
 const ContactForm = () => {
   const [result, setResult] = useState(null);

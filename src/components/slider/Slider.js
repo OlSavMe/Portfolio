@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "../../styles/Slider.scss";
+import "../../styles/componentStyles/Slider.scss";
 import Modal from "../Modal";
 import projectData from "../../data/ProjectData";
 
@@ -58,9 +58,9 @@ const Slider = ({ slides }) => {
           </figcaption>
           {index === current && (
             <img
-              className="picture"
+              className="screenshot"
               src={item.bigpic}
-              alt={`${item.title}picture`}
+              alt={`${item.title}screenshot`}
             />
           )}
           {show && (

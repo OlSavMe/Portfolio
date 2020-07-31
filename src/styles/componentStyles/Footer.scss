@@ -1,4 +1,4 @@
-@import "./indexStyle.scss";
+@import "../indexStyle.scss";
 
 .footer {
   display: grid;
@@ -100,7 +100,6 @@
       padding: 0;
       text-decoration: none;
       display: inline-block;
-      //   position: relative;
     }
     .selectedLink {
       text-decoration: underline;
