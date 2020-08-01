@@ -5,8 +5,20 @@
 .portfolio-container {
   @include main-container;
 
+  @include media(mobile, ipad) {
+    padding: 0.5rem 0;
+  }
+
   .projects-section {
-    // height: 100vh;
+    height: 100vh;
+
+    @include media(mobile, ipad, tablet) {
+      height: auto;
+    }
+
+    @include landscape {
+      height: auto;
+    }
 
     .slider-container {
       display: flex;

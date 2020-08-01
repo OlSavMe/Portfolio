@@ -3,7 +3,8 @@
 div {
   .burger {
     display: none;
-    @include phone {
+
+    @include media(mobile, ipad) {
       position: fixed;
       top: 0.5rem;
       left: 0.5rem;

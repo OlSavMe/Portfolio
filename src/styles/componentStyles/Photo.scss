@@ -3,39 +3,28 @@
 .photo-section {
   display: grid;
   grid-template-areas: "item text";
-  font-size: 1.3rem;
-  padding: 12%;
+  font-size: 1.3em;
   align-items: center;
+  padding: 10%;
 
-  @include media(mobile, ipad) {
-    font-size: 1rem;
+  @include media(mobile, ipad, tablet) {
+    font-size: 1.1rem;
     padding: 20% 5%;
+    margin: 0;
     grid-template-areas:
       "item"
       "text";
   }
 
-  @include media(tablet, tablet-landscape) {
-    font-size: 1.2rem;
+  @include tablet {
+    font-size: 1.2em;
   }
 
   .photo-item {
     grid-area: "item";
-    margin: 0 20px 20px 0;
+    margin: 1rem 0;
     width: 250px;
     filter: grayscale(10%) brightness(110%);
-
-    @include mobile {
-      width: 170px;
-    }
-
-    @include ipad {
-      width: 160px;
-    }
-
-    @include tablet {
-      margin: 0;
-    }
 
     figure {
       width: 220px;
@@ -50,10 +39,6 @@
       margin-block-end: 0;
       margin-inline-start: 0;
       margin-inline-end: 0;
-
-      @include phone {
-        width: 160px;
-      }
 
       > img {
         width: 100%;
@@ -77,14 +62,12 @@
     padding: 0;
     line-height: 3rem;
 
-    @include mobile {
-      line-height: 2rem;
-    }
-    @include ipad {
-      line-height: 2rem;
+    @include media(mobile, ipad, tablet) {
+      line-height: 2.2rem;
+      text-align: left;
     }
 
-    @include tablet {
+    @include tablet-landscape {
       line-height: 2.5rem;
     }
   }

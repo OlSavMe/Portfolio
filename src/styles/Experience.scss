@@ -5,7 +5,12 @@
   align-items: center;
 
   #work {
-    margin: 7rem 5% 0;
+    margin: 7%;
+
+    @include media(mobile, ipad, tablet) {
+      margin: 10% 0;
+    }
+
     .hash-group {
       margin: 1rem 2rem;
       ul {
@@ -21,9 +26,12 @@
           margin: 0;
           padding: 5px;
           cursor: pointer;
+          @include media(mobile, ipad) {
+            font-size: 1.1rem;
+          }
 
           a {
-            color: #666;
+            color: $textColor;
             text-decoration: none;
 
             &:hover,
@@ -42,7 +50,12 @@
       font-size: 1.2rem;
       padding: 3rem;
       background-color: white;
-      color: #666666;
+      color: $textColor;
+      @include media(mobile, ipad, tablet) {
+        margin: 1rem 0;
+        font-size: 1.1rem;
+        padding: 1.1rem;
+      }
 
       h2 {
         font-size: 1.3rem;
@@ -52,7 +65,7 @@
       }
 
       p {
-        line-height: 3rem;
+        line-height: 2rem;
         margin: 0;
       }
       a {

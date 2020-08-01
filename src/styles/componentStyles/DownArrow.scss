@@ -6,17 +6,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  bottom: 3rem;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 
-  @include mobile {
-    margin-top: 1rem;
-    font-size: 1rem;
-  }
-
-  @include ipad {
-    margin-top: 1rem;
-    font-size: 1rem;
+  @include media(mobile, ipad) {
+    font-size: 1.1em;
   }
 
   .indicator {

@@ -8,8 +8,11 @@
   .hero {
     height: 100vh;
     align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 
-    @include media(mobile, ipad) {
+    @include media(mobile, ipad, tablet, tablet-landscape) {
       height: auto;
     }
 
@@ -20,15 +23,17 @@
 
   #projects {
     display: grid;
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 1rem;
     grid-gap: 1rem;
+    margin-top: 2rem;
 
     @include min-media(mobile, ipad, tablet) {
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      padding: 1rem 4rem;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      padding: 1rem;
       grid-gap: 1rem;
     }
+
     @include min-media(tablet-landscape, desktop) {
       padding: 2rem 4rem;
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));

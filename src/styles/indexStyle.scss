@@ -1,4 +1,7 @@
-// @import "~bootstrap/scss/bootstrap";
+// palette
+$yellow: #f9a602;
+$yellowrgb: rgb(249, 166, 2);
+$textColor: #666;
 
 @mixin scrollbars {
   // Chrome, Edge, Opera, Safari, iOS
@@ -34,9 +37,7 @@
 }
 
 @mixin main-container {
-  display: flex;
-  flex-direction: column;
-  color: #666666;
+  color: $textColor;
   padding: 0.5rem;
 }
 
@@ -339,8 +340,3 @@ $breakpoints: (
     z-index: 0;
   }
 }
-
-// palette
-$yellow: #f9a602;
-$yellowrgb: rgb(249, 166, 2);
-$textColor: #666;

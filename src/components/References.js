@@ -48,6 +48,20 @@ const References = () => {
             </li>
             <li class="anim3">
               <div class="quote">
+                Olga worked at the Paroc stone wool plant construction project
+                for the period of July 2012 - December 2013. Olga’s prime
+                responsibility was interpretation at meetings, trainings, check
+                tours, commissioning works and negotiations. Olga quickly
+                mastered complicated machinery and mechanics terminology around
+                the Paroc process and construction works. Cooperation has been
+                excellent due to her fascinating character.
+              </div>
+              <div class="source">
+                - Pekka Kuokkanen, Technology Project Leader, Paroc Group OY
+              </div>
+            </li>
+            <li class="anim4">
+              <div class="quote">
                 When I was interviewing Olga for the developer position, I was
                 very impressed noticing how level headed and professional she
                 is. Olga is very practical with expectations setting and
@@ -68,7 +82,7 @@ const References = () => {
                 - Mojjammil Khandker, CTO at The Shortcut
               </div>
             </li>
-            <li class="anim4">
+            <li class="anim5">
               <div class="quote">
                 I worked with Olga on the development of the new website for The
                 Shortcut community. Olga proved to be very methodological when
@@ -83,28 +97,6 @@ const References = () => {
                 engineers!
               </div>
               <div class="source">- Alina Ilina, Web Developer</div>
-            </li>
-            <li class="anim5">
-              <div class="quote">
-                When I was interviewing Olga for the developer position, I was
-                very impressed noticing how level headed and professional she
-                is. Olga is very practical with expectations setting and
-                delivers what's promised in due time even if it requires
-                learning new things on the go. She also led sessions at The
-                Shortcut hosted FreeCodeCamp meetup on Redux and did a
-                tremendous job as per feedback from the participants. She is
-                very proficient with JavaScript frontend technologies and
-                especially comfortable with React and necessary libraries to
-                pull off a project from scratch. Olga worked on The Shortcut's
-                database management system's frontend and the new website of The
-                Shortcut both of which required her to use React, and she did a
-                great thorough job on both. I would highly recommend Olga as a
-                great professional, friendly, and welcoming team player and a
-                developer who works very calmly under pressure.
-              </div>
-              <div class="source">
-                - Mojjammil Khandker, CTO at The Shortcut
-              </div>
             </li>
           </ul>
         </div>

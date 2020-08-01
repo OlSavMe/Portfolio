@@ -13,7 +13,8 @@ nav {
   padding: 1% 2% 0 2%;
   transition: transform 1s ease-in-out;
   // box-shadow: 0.3px 0.3px 0.3px #070707;
-  @include phone {
+
+  @include media(mobile, ipad) {
     display: none;
   }
 

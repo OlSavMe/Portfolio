@@ -12,6 +12,10 @@
     align-items: center;
     flex-wrap: wrap;
 
+    @include media(mobile, ipad) {
+      margin: 2%;
+    }
+
     li {
       font-size: 1.25rem;
       margin: 0 10px 10px 0;
@@ -28,6 +32,9 @@
         box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
         background-color: rgba(249, 166, 2, 0.5);
         border: none;
+      }
+      @include media(mobile, ipad) {
+        font-size: 1.1rem;
       }
     }
   }

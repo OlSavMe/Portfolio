@@ -3,8 +3,12 @@
 .github {
   display: flex;
   flex-direction: column;
-  padding: 2rem 7%;
+  padding: 0 5%;
+  margin-top: 3rem;
 
+  @include media(mobile, ipad) {
+    padding: 0 1%;
+  }
   .repolist {
     display: flex;
     flex-direction: column;
@@ -15,6 +19,9 @@
       > span {
         color: $yellow;
         padding: 0 2px;
+      }
+      @include media(mobile, ipad) {
+        font-size: 1rem;
       }
     }
     .list {
@@ -27,63 +34,45 @@
         overflow: hidden;
         width: calc(50% - 10px);
         margin: 20px 0;
-        font-size: 1.7rem;
-        padding: 1.5rem;
+        font-size: 1.3rem;
+        padding: 1.2rem;
         background-color: white;
         @include card-border;
 
-        @include phone {
+        @include media(mobile, ipad) {
           margin: 2% 1%;
-          font-size: 1.1em;
-          width: calc(100% - 20px);
+          font-size: 1rem;
+          width: calc(100% - 10px);
         }
 
         @include tablet {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
         }
-        @include tablet-landscape {
-          font-size: 1.4rem;
-        }
+
         a {
           width: 40px;
           color: $yellow;
-          text-decoration: none;
+          text-decoration: underline;
           padding: 0;
 
-          &:hover {
-            text-decoration: underline;
-          }
-
-          @include phone {
-            text-decoration: underline;
-            font-size: 1.1em;
-          }
           img {
             height: 25px;
           }
         }
 
         p {
-          font-size: 1.4rem;
-          color: #666666;
+          color: $textColor;
           margin: 0;
-          @include phone {
-            font-size: 1.1em;
-          }
         }
 
         span {
           a {
-            font-size: 1.5rem;
             color: $yellow;
             background: none;
             text-decoration: none;
-            @include phone {
-              font-size: 1em;
-            }
 
             &:hover {
-              color: #666666;
+              color: $textColor;
             }
           }
         }

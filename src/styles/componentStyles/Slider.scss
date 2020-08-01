@@ -2,7 +2,7 @@
 
 .slider {
   display: flex;
-  margin: 10% 0;
+  margin: 8%;
   position: relative;
   height: 28rem;
   width: 70%;
@@ -14,7 +14,7 @@
   @include media(mobile, ipad) {
     width: 100%;
     height: 20rem;
-    margin: 20% 2%;
+    margin: 20% 0;
   }
 
   @include tablet {
