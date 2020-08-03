@@ -12,7 +12,6 @@ nav {
   background-color: white;
   padding: 1% 2% 0 2%;
   transition: transform 1s ease-in-out;
-  // box-shadow: 0.3px 0.3px 0.3px #070707;
 
   @include media(mobile, ipad) {
     display: none;
@@ -23,7 +22,7 @@ nav {
     left: 0;
 
     > a {
-      color: #666666;
+      color: $textColor;
       font-size: 1.2rem;
       margin: 0 1.2rem;
       padding: 0.1rem 0;

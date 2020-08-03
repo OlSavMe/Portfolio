@@ -7,7 +7,6 @@
   top: 0;
   width: 100%;
   height: 100%;
-
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
@@ -18,72 +17,80 @@
 
   .content {
     background-color: #fefefe;
-    margin: 5% auto;
+    margin: 6% auto;
     min-height: 80%;
     border: 1px solid #888;
     border-radius: 3px;
     padding: 0 1rem;
-    width: 80%;
+    width: 90%;
+
+    @include media(mobile, ipad) {
+      margin: 15% auto;
+      padding: 0 0.5rem;
+    }
 
     span {
       float: right;
       outline: none;
       background-color: transparent;
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: bold;
       box-shadow: none;
       cursor: pointer;
       border: none;
+      @include media(mobile, ipad) {
+        font-size: 2rem;
+      }
     }
     article {
-      margin: 7% 10%;
+      margin: 4%;
       display: flex;
       flex-direction: column;
       justify-items: stretch;
+      font-size: 1.1rem;
+      line-height: 2rem;
+
+      @include min-media(tablet, tablet-landscape, desktop) {
+        font-size: 1.2rem;
+      }
+
+      > h3 {
+        font-weight: 300;
+      }
+
+      .links {
+        margin-bottom: 2rem;
+        a {
+          padding-right: 2rem;
+          color: $yellow;
+          font-weight: 400;
+        }
+      }
+      p {
+        margin: 0 0 1rem 0;
+      }
+
+      section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        @include media(mobile, ipad) {
+          flex-direction: column;
+          justify-content: flex-start;
+          flex-wrap: nowrap;
+        }
+
+        div {
+          padding: 0.5rem;
+
+          p {
+            margin-bottom: 0;
+            color: $yellow;
+          }
+        }
+      }
     }
-  }
-}
-
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes animateup {
-  from {
-    top: 0;
-    opacity: 0;
-  }
-  to {
-    top: -300px;
-    opacity: 1;
-  }
-}
-
-@keyframes animateup {
-  from {
-    top: 0;
-    opacity: 0;
-  }
-  to {
-    top: -300px;
-    opacity: 1;
   }
 }

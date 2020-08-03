@@ -6,8 +6,15 @@
   font-size: 1.3em;
   align-items: center;
   padding: 10%;
+  // background-color: rgb(58, 31, 5);
 
-  @include media(mobile, ipad, tablet) {
+  // -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  // -moz-animation: fadein 3s; /* Firefox < 16 */
+  // -ms-animation: fadein 3s; /* Internet Explorer */
+  // -o-animation: fadein 3s; /* Opera < 12.1 */
+  // animation: fadein 3s;
+
+  @include media(mobile, ipad) {
     font-size: 1.1rem;
     padding: 20% 5%;
     margin: 0;
@@ -17,14 +24,25 @@
   }
 
   @include tablet {
+    padding: 10% 5%;
     font-size: 1.2em;
+    align-items: flex-start;
   }
 
   .photo-item {
     grid-area: "item";
-    margin: 1rem 0;
+    margin: 2rem;
     width: 250px;
     filter: grayscale(10%) brightness(110%);
+    transform: rotate(-2deg);
+
+    @include media(mobile, ipad) {
+      margin: 1rem 0 2rem 2rem;
+    }
+
+    @include tablet {
+      width: 200px;
+    }
 
     figure {
       width: 220px;
@@ -40,13 +58,23 @@
       margin-inline-start: 0;
       margin-inline-end: 0;
 
+      @include media(mobile, ipad) {
+        width: 190px;
+        margin: 0;
+      }
+
+      @include tablet {
+        margin: 0;
+        width: 200px;
+      }
+
       > img {
         width: 100%;
       }
       > figcaption {
         text-align: center;
         padding: 0.7rem 0 0.4rem;
-        @include phone {
+        @include media(mobile, ipad) {
           font-size: 1rem;
           padding: 0.5rem 0 0.1rem;
         }
@@ -62,13 +90,28 @@
     padding: 0;
     line-height: 3rem;
 
+    // -webkit-animation-name: slidedown;
+    // -webkit-animation-duration: 1.5s;
+    // -webkit-animation-delay: 2s;
+    // animation-name: slidedown;
+    // animation-duration: 1.5s;
+    // animation-delay: 2s;
+
     @include media(mobile, ipad, tablet) {
-      line-height: 2.2rem;
-      text-align: left;
+      line-height: 2.3rem;
     }
 
     @include tablet-landscape {
       line-height: 2.5rem;
     }
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    transform: translateY(-250px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

@@ -4,21 +4,65 @@ const careerData = [
     position: "Frontend Web Developer",
     company: "The Shortcut, Helsinki",
     period: "Jan 2020 - Jul 2020",
-    desc:
-      "Developing responsive user interface of the company's website with JavaScript and React.js, SCSS, fetching data from WordPress and Eventbrite APIs. Monitoring GitHub based collaboration. Teamwork with designers and marketers using Agile approach and Trello boards. Deployment of MVPs on Firebase platform.",
+    duties: [
+      "developing responsive interfaces",
+      "fetching data using REST APIs",
+      "deploying MVPs",
+      "monitoring Github-based collaboration",
+      "application prototyping",
+      "teamwork with backend developer, designer, data analysts, marketing team",
+    ],
+    tech: [
+      "React.js",
+      "JavaScript",
+      "WordPress",
+      "SASS",
+      "REST API",
+      "Axios",
+      "AWS",
+      "Docker Containers",
+      "Trello",
+      "Scrum",
+      "Firebase",
+      "react-chartjs-2",
+      "JSON",
+      "Figma",
+    ],
+    projects: [
+      "The Shortcut public website",
+      "The Shortcut Database Management System",
+    ],
+
     link: "https://github.com/OlSavMe/React-Shortcut-Website",
-    desctwo:
-      "Creating JSON data and visual charts for the interface of the Database Management System with React.js, react-chartjs-2, using Docker Containers for local dev environment. Teamwork with a backend developer and data analysts.",
   },
   {
     id: 2,
     position: "Frontend Web Developer",
     company: "Haaga-Helia & Webscale Oy, Helsinki",
     period: "Aug 2019 - Dec 2019",
-    desc:
-      "Developing user interface of a game web app with React.js, React Material-UI, qr scanner library, react-router, Axios, using Docker Containers with pgAdmin for local dev environment. Team work with front- and backend developers, designers in Scrum sprints, using git version control and CircleCI for continuous delivery and automated testing.",
-    link: "",
-    desctwo: "",
+    duties: [
+      "developing interface of a game application",
+      "Github-based collaboration",
+      "teamwork with backend developers and designers",
+    ],
+    tech: [
+      "React.js",
+      "JavaScript",
+      "React Material-UI",
+      "Axios",
+      "Docker Containers",
+      "pgAdmin",
+      "SQL",
+      "qr scanner library",
+      "CircleCI",
+      "Trello",
+      "Scrum",
+    ],
+    projects: [
+      "Game web application meant primarily for use on mobile devices - university based project for Webscale Oy",
+    ],
+
+    link: null,
   },
 
   {
@@ -26,22 +70,30 @@ const careerData = [
     position: "UX Designer",
     company: "DIGITAL PROTOTYPING WEEK by The Shortcut, Helsinki",
     period: "Oct 2019",
-    desc:
-      "Developing design and prototype of a volunteer matching mobile app with Figma. Teamwork with the other UX designer.",
+    duties: ["UX prototyping", "teamwork with another UX designer"],
+    projects: [
+      "Volunteer matching mobile app, prototyped during The Shortcut prototyping week",
+    ],
+    tech: ["Figma"],
     link:
       "https://www.figma.com/proto/P9IeRig2R8qgdylrxklhUC/Prototyping-UI-Kit-(Copy)?node-id=311%3A263&scaling=scale-down",
-    desctwo: "",
   },
   {
     id: 4,
     position: "UX Designer",
     company: "The winner project of the RIGA MUDDIE WEEK, Riga",
     period: "Apr 2019",
-    desc:
-      "Developing design and prototype for a healthcare application with Figma in a multidisciplinary team.",
+    duties: [
+      "developing interactive UX prototype",
+      "creating user portraite in course of team brainstorming",
+      "work in a multidiscplinary team",
+    ],
+    projects: [
+      "Mobile application for teenagers suffering from migraine. The application helps patients to monitor their daily life in order to detect conditions cause migraine pains. The application is designed to record daily events in most undisturbed way, without major interruptions of normal life flow",
+    ],
+    tech: ["Figma"],
     link:
       "https://www.figma.com/proto/MXr37r7aAN7txw7QVJFY03/READY-migraine-map-vol2-(Copy)?node-id=29%3A6&scaling=scale-down",
-    desctwo: "",
   },
 
   {
@@ -50,10 +102,10 @@ const careerData = [
     company:
       "Astaldi Ictas, Josef Gartner, Paroc, Lemminkäinen, Globus, freelance, Tver - Saint-Petersburg",
     period: "2010 - 2016",
-    desc:
-      "Translation, interpreting, writing, proofreading in construction and manufacturing industries.",
-    link: "",
-    desctwo: "",
+    duties: ["Translation", "interpreting", "writing", "proofreading"],
+    projects: ["construction and manufacturing projects"],
+    tech: ["English, German", "Finnish", "Russian"],
+    link: null,
   },
 
   {
@@ -61,10 +113,18 @@ const careerData = [
     position: "SEO Copywriter",
     company: "Online-marketing agencies",
     period: "2011 - 2012",
-    desc:
-      "Advertising, web-content creation, SEO copywriting, translation, editing, negotiations with clients, moderation of an online shoe store community in a social network",
-    link: "",
-    desctwo: "",
+    duties: [
+      "advertising",
+      "web-content creation",
+      "SEO copywriting",
+      "translation",
+      "editing",
+      "negotiations with clients",
+      "moderation of an online shoe store community in a social network",
+    ],
+    projects: null,
+    tech: null,
+    link: null,
   },
 ];
 export default careerData;

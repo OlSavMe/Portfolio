@@ -57,23 +57,68 @@ const Slider = ({ slides }) => {
             </a>
           </figcaption>
           {index === current && (
-            <img
-              className="screenshot"
-              src={item.bigpic}
-              alt={`${item.title}screenshot`}
-            />
+            <picture>
+              <source media="(min-width: 480px)" srcset={item.bigpic} />
+              <img
+                className="screenshot"
+                src={item.smallpic}
+                alt={`${item.title}screenshot`}
+              />
+            </picture>
           )}
           {show && (
             <Modal toggleModal={toggleModal} id="modal">
               <h3>{item.title}</h3>
-              <a href={item.url} target="_blank" rel="noopener noreferrer">
-                {item.url}
-              </a>
-              <a href={item.github} target="_blank" rel="noopener noreferrer">
-                Check github repository
-              </a>
+              <div className="links">
+                {" "}
+                {item.url && (
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    Website
+                  </a>
+                )}
+                {item.github && (
+                  <a
+                    href={item.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Github
+                  </a>
+                )}
+              </div>
               <p>{item.description}</p>
-              <p>{item.technology}</p>
+              <section>
+                {item.features && (
+                  <div>
+                    <p>Features:</p>
+                    <ul>
+                      {item.features.map((el) => (
+                        <li>{el}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {item.tools && (
+                  <div>
+                    <p>Tools:</p>
+                    <ul>
+                      {item.tools.map((el) => (
+                        <li>{el}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {item.libraries && (
+                  <div>
+                    <p>Libraries:</p>
+                    <ul>
+                      {item.libraries.map((el) => (
+                        <li>{el}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </section>
             </Modal>
           )}
         </div>

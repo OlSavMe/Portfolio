@@ -1,7 +1,7 @@
 import React from "react";
 
 const ExpCard = (props) => {
-  const { company, period, desc, link, desctwo, position, id } = props;
+  const { company, period, duties, tech, projects, link, position, id } = props;
 
   return (
     <div className="exp-card" id={id}>
@@ -11,14 +11,14 @@ const ExpCard = (props) => {
         {period} {" : "} {company}
       </h2>
 
-      <p>{desc}</p>
+      <p>{projects}</p>
 
       {link ? (
         <a href={link} target="_blank" rel="noopener noreferrer">
-          View the project
+          Project
         </a>
       ) : null}
-      {desctwo ? <p>{desctwo}</p> : null}
+      {projects ? <p>{projects}</p> : null}
     </div>
   );
 };

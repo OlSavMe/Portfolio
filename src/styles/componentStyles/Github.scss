@@ -3,7 +3,7 @@
 .github {
   display: flex;
   flex-direction: column;
-  padding: 0 5%;
+  padding: 2rem 5%;
   margin-top: 3rem;
 
   @include media(mobile, ipad) {

@@ -8,8 +8,10 @@
     margin: 7rem auto;
     width: 80%;
     font-size: 1.1rem;
+
     h3 {
       margin-left: 18px;
+      font-weight: 300;
       span {
         margin-right: 1%;
         color: $yellow;
@@ -35,7 +37,7 @@
     }
 
     h3 {
-      // font-size: 1.3rem;
+      font-weight: 300;
       margin-left: 18px;
     }
 
@@ -54,7 +56,8 @@
         border: solid $yellow 1px;
         outline: none;
         text-align: left;
-        color: #666;
+        color: $textColor;
+        font-weight: 300;
 
         span {
           width: 90%;
@@ -94,7 +97,7 @@
         span,
         a {
           display: inline-block;
-          font-weight: 400;
+          font-weight: 300;
           padding: 0.7rem;
           color: #666;
         }

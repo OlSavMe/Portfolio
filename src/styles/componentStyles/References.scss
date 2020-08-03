@@ -47,6 +47,8 @@
       ul {
         @include user-select-disabled;
         font-size: 1.2rem;
+        font-weight: 300;
+        color: $textColor;
         margin: 0;
         padding: 0;
         position: relative;
@@ -72,7 +74,7 @@
             font-style: italic;
           }
           .source {
-            font-weight: bolder;
+            font-weight: 400;
             text-align: right;
           }
         }

@@ -5,12 +5,14 @@ import Modal from "./Modal";
 const Project = (props) => {
   const {
     title,
-    picture,
+    bigpic,
     summary,
     description,
+    features,
+    tools,
     github,
     url,
-    technology,
+    libraries,
   } = props;
 
   const [show, setShow] = useState(false);
@@ -22,7 +24,7 @@ const Project = (props) => {
   return (
     <a href="#modal" onClick={toggleModal} className="card">
       <figure>
-        <img src={picture} alt="project"></img>
+        <img src={bigpic} alt="project"></img>
         <figcaption>
           <a href="#modal" onClick={toggleModal}>
             {" "}
@@ -36,14 +38,52 @@ const Project = (props) => {
       {show && (
         <Modal toggleModal={toggleModal} id="modal">
           <h3>{title}</h3>
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            {url}
-          </a>
-          <a href={github} target="_blank" rel="noopener noreferrer">
-            Check github repository
-          </a>
+          <div className="links">
+            {" "}
+            {url && (
+              <a href={url} target="_blank" rel="noopener noreferrer">
+                Website
+              </a>
+            )}
+            {github && (
+              <a href={github} target="_blank" rel="noopener noreferrer">
+                Github
+              </a>
+            )}
+          </div>
           <p>{description}</p>
-          <p>{technology}</p>
+          <section>
+            {features && (
+              <div>
+                <p>Features:</p>
+                <ul>
+                  {features.map((el) => (
+                    <li>{el}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {tools && (
+              <div>
+                <p>Tools:</p>
+                <ul>
+                  {tools.map((el) => (
+                    <li>{el}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {libraries && (
+              <div>
+                <p>Libraries:</p>
+                <ul>
+                  {libraries.map((el) => (
+                    <li>{el}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </section>
         </Modal>
       )}
     </a>
