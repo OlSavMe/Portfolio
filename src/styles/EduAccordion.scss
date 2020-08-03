@@ -12,6 +12,10 @@
     h3 {
       margin-left: 18px;
       font-weight: 300;
+      @include mobile {
+        font-weight: 400;
+      }
+
       span {
         margin-right: 1%;
         color: $yellow;

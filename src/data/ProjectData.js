@@ -67,12 +67,15 @@ const projectData = [
       "animated scrolldown indicator",
       "rotated 'polaroid' image",
       "hash group with anchor linking",
+      "filtering button group",
+      "slide-in animation",
     ],
 
     tools: [
       "React v16.8",
       "API Context",
       "SASS/SCSS (mixing, breakpoints, dynamic keys, variables, nesting)",
+      "cubic-bezier function generator",
       "Axios",
       "GitHub API",
       "JavaScript data objects",
@@ -112,7 +115,7 @@ const projectData = [
     ],
 
     description:
-      "While working on CV website I experimented with background images and videos (videos are not included into the final version), semi-transparent overlays, box shadowing and svg shapes, React Material-UI components and icons were utilized for top navbar (in Material-UI documentation - 'bottom navbar') and for controlled accordion with expanded panels, react-select component was adopted for the drop-down selection menu with customize styling",
+      "While working on CV website I experimented with background images and videos (videos are not included into the final version), semi-transparent overlays, box shadowing and svg shapes. React Material-UI components and icons were utilized for top navbar (in Material-UI documentation - 'bottom navbar'), Material-UI controlled accordion with expanded panels was used for education section. react-select component was adopted for the drop-down menu with customized styling",
     summary:
       "React, Axios, GitHub API, React Material-UI, react-select, SASS/SCSS",
     github: "https://github.com/OlSavMe/Current-CV-Website",

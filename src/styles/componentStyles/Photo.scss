@@ -6,13 +6,6 @@
   font-size: 1.3em;
   align-items: center;
   padding: 10%;
-  // background-color: rgb(58, 31, 5);
-
-  // -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-  // -moz-animation: fadein 3s; /* Firefox < 16 */
-  // -ms-animation: fadein 3s; /* Internet Explorer */
-  // -o-animation: fadein 3s; /* Opera < 12.1 */
-  // animation: fadein 3s;
 
   @include media(mobile, ipad) {
     font-size: 1.1rem;
@@ -34,7 +27,8 @@
     margin: 2rem;
     width: 250px;
     filter: grayscale(10%) brightness(110%);
-    transform: rotate(-2deg);
+    // animation-timing-function: cubic-bezier(0.65, 0, 0.32, 1.55);
+    animation: slideIn 2.5s ease-in-out forwards;
 
     @include media(mobile, ipad) {
       margin: 1rem 0 2rem 2rem;
@@ -84,7 +78,8 @@
 
   p {
     grid-area: "text";
-    text-align: justify;
+    animation: slidedown 2s ease-in-out backwards;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.32, 1.55);
     margin: 0;
     font-family: inherit;
     padding: 0;
@@ -109,9 +104,28 @@
 
 @keyframes slidedown {
   0% {
-    transform: translateY(-250px);
+    transform: translateX(700px);
+    opacity: 0.2;
   }
+  70% {
+    transform: translateX(0px);
+    opacity: 0.4;
+  }
+
   100% {
-    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-1500px);
+  }
+  80% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: rotate(-2deg);
   }
 }
