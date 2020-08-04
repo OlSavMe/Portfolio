@@ -68,12 +68,12 @@ const projectData = [
       "rotated 'polaroid' image",
       "hash group with anchor linking",
       "filtering button group",
-      "slide-in animation",
+      "slide-in animation of the hero section",
     ],
 
     tools: [
       "React v16.8",
-      "API Context",
+      "Context API",
       "SASS/SCSS (mixing, breakpoints, dynamic keys, variables, nesting)",
       "cubic-bezier function generator",
       "Axios",
@@ -83,9 +83,9 @@ const projectData = [
     ],
 
     description:
-      "My new portfolio website was created in React with minimum use of other libraries. The website is designed in three-color pallette with orange as an accent. The three colors - orange, white and light-grey, - are united in the customized animated logo. Github API is utilized for dynamic fetching my current repositories' data. SASS tools were used for easier responsiveness styling",
+      "My new portfolio website was created in React with minimum use of other libraries. App state is managed with Context API and Hooks, my GitHub repositories' data is fetched and filtered through GitHub API with Axios, code reuse is implemented either with composition or inheritance. App responsiveness is achieved with use of grid and flex containers, as well as SASS breakpoints with dynamic keys for easier styling. The website is designed in three-color pallette with orange as an accent. The three colors - orange, white and light-grey, - are united in the customized animated logo.",
     summary:
-      "React.js, API Context, React Hooks, SASS/SCSS (mixins, breakpoints, dynamic keys, variables, nesting), Axios, GitHub API, Firebase",
+      "React.js, Context API, React Hooks, SASS/SCSS (mixins, breakpoints, dynamic keys, variables, nesting), Axios, GitHub API, Firebase",
     github: "https://github.com/OlSavMe/Portfolio",
     url: "https://savkaportfolio.web.app/",
     libraries: ["react-router", "react-anchor-link-smooth-scroll"],
@@ -128,42 +128,79 @@ const projectData = [
     picture: "img/manag.png",
     bigpic: "img/big-manag.jpg",
     smallpic: "img/small-manag.jpg",
-    features: ["CRUD repositories", "order database"],
+    features: [
+      "CRUD operations (add, edit, delete)",
+      "RESTful web service",
+      "user authentication",
+      "unit tests",
+    ],
     tools: [
-      "java-based Spring Boot framework",
+      "Java-based Spring Boot framework",
+      "Spring Security",
       "Maven software project management tool",
       "Bootstrap",
+      "Thymeleaf",
       "Eclipse IDE",
+      "Postman",
       "object-oriented programming paradigm",
       "object-relational mapping",
     ],
 
     description:
-      "The Order Manager web application was created as a final individual assignment for Server programig course. The Maven project was generated with Spring Initializer. Creating entity classes with Spring Boot",
+      "Order Manager app is storing orders' info, lets user add/edit orders, admin user can also delete orders. The interface shows current date and total number of orders. Upon login users are identified by type. The app was created as an individual assignment within the Server Programmig course.",
     summary:
-      "Java, Spring Boot framework, Maven software project management tool, Bootstrap",
+      "Java, Spring Boot framework, Maven software project management tool, Thymeleaf template engine, SQL, Bootstrap",
     github: "https://github.com/OlSavMe/Order-Manager",
     url: null,
     libraries: null,
   },
-  // {
-  //   id: 5,
-  //   title: "Server Programming project",
-  //   picture: "img/manag.png",
-  //   description: "Java SpringBoot",
-  //   summary: "Java SpringBoot",
-  //   github: "https://github.com/OlSavMe/Current-CV-Website",
-  //   url: "https://o-savka.firebaseapp.com/",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Server Programming project",
-  //   picture: "img/manag.png",
-  //   description: "Java SpringBoot",
-  //   summary: "Java SpringBoot",
-  //   github: "https://github.com/OlSavMe/Current-CV-Website",
-  //   url: "https://o-savka.firebaseapp.com/",
-  // },
+  {
+    id: 5,
+    title: "Contact Form",
+    picture: "img/manag.png",
+    bigpic: "img/big-form.jpg",
+    smallpic: "img/small-form.jpg",
+    features: ["Simple contact form"],
+    tools: [
+      "Node.js / Nodemailer",
+      "Express",
+      "React",
+      "OAuth 2.0",
+      "Google APIs",
+      "dotenv",
+    ],
+
+    description:
+      "Contact form with backend implemented in Node.js, its Nodemailer module and Express",
+    summary: "Nodemailer, Node.js, Express, React, OAuth 2.0, Google APIs",
+    github: "https://github.com/OlSavMe/Contact-Form",
+    url: null,
+    libraries: null,
+  },
+  {
+    id: 6,
+    title: "Azure DevOps Project",
+    picture: null,
+    bigpic: "img/big-az.jpg",
+    smallpic: "img/small-az.jpg",
+    features: [
+      "creating DevOps project",
+      "modifying YAML script",
+      "integrating CI/CD pipeline with GitHub repo",
+      "managing DevOps project from VSCode",
+    ],
+    tools: ["Azure Cloud", "Azure pipelines", "Visual Studio", "GitHub"],
+
+    description:
+      "Studying tools for Continuous Integration and Continuous Delivery provided by Azure Cloud for web development. Individual assignment for Cloud Services course",
+    summary:
+      "Azure Cloud, CI/CD pipelines, DevOps projects, YAML, Visual Studio",
+    github:
+      "https://www.youtube.com/watch?v=9xay2h1djfo&list=PLf8VCwwYAvPWxZJ8q_HCDtfuYc42G9iKM",
+    url:
+      "https://drive.google.com/file/d/1YvD3OZGGRHA8U4uNKF7-hKOVgk5g2HBH/view",
+    libraries: null,
+  },
 ];
 
 export default projectData;

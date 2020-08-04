@@ -5,27 +5,25 @@ const careerData = [
     company: "The Shortcut, Helsinki",
     period: "Jan 2020 - Jul 2020",
     duties: [
-      "developing responsive interfaces",
-      "fetching data using REST APIs",
-      "deploying MVPs",
-      "monitoring Github-based collaboration",
-      "application prototyping",
-      "teamwork with backend developer, designer, data analysts, marketing team",
+      "- developing responsive interfaces",
+      "- fetching data using REST APIs",
+      "- deploying MVPs",
+      "- monitoring Github-based collaboration",
+      "- application prototyping",
+      "- teamwork with the backend developer, designer, data analysts, marketing team",
     ],
     tech: [
       "React.js",
       "JavaScript",
-      "WordPress",
+      "WordPress as headless CMS",
       "SASS",
       "REST API",
       "Axios",
-      "AWS",
       "Docker Containers",
       "Trello",
       "Scrum",
       "Firebase",
       "react-chartjs-2",
-      "JSON",
       "Figma",
     ],
     projects: [
@@ -33,7 +31,7 @@ const careerData = [
       "The Shortcut Database Management System",
     ],
 
-    link: "https://github.com/OlSavMe/React-Shortcut-Website",
+    link: "https://beta.theshortcut.org/",
   },
   {
     id: 2,
@@ -41,9 +39,9 @@ const careerData = [
     company: "Haaga-Helia & Webscale Oy, Helsinki",
     period: "Aug 2019 - Dec 2019",
     duties: [
-      "developing interface of a game application",
-      "Github-based collaboration",
-      "teamwork with backend developers and designers",
+      "- developing interface of a game application",
+      "- Github-based collaboration",
+      "- teamwork with backend developers and designers",
     ],
     tech: [
       "React.js",
@@ -59,7 +57,7 @@ const careerData = [
       "Scrum",
     ],
     projects: [
-      "Game web application meant primarily for use on mobile devices - university based project for Webscale Oy",
+      "Game web application meant primarily for use on mobile devices - university based project for Webscale Oy.",
     ],
 
     link: null,
@@ -70,9 +68,9 @@ const careerData = [
     position: "UX Designer",
     company: "DIGITAL PROTOTYPING WEEK by The Shortcut, Helsinki",
     period: "Oct 2019",
-    duties: ["UX prototyping", "teamwork with another UX designer"],
+    duties: ["- UX prototyping", "- teamwork with another UX designer"],
     projects: [
-      "Volunteer matching mobile app, prototyped during The Shortcut prototyping week",
+      "Volunteer matching mobile app prototyped during The Shortcut digital prototyping week",
     ],
     tech: ["Figma"],
     link:
@@ -84,12 +82,12 @@ const careerData = [
     company: "The winner project of the RIGA MUDDIE WEEK, Riga",
     period: "Apr 2019",
     duties: [
-      "developing interactive UX prototype",
-      "creating user portraite in course of team brainstorming",
-      "work in a multidiscplinary team",
+      "- developing interactive UX prototype",
+      "- creating user portrait in course of team brainstorming",
+      "- work in a multidiscplinary team",
     ],
     projects: [
-      "Mobile application for teenagers suffering from migraine. The application helps patients to monitor their daily life in order to detect conditions cause migraine pains. The application is designed to record daily events in most undisturbed way, without major interruptions of normal life flow",
+      "Mobile application for teenagers suffering from migraine. The application helps patients to monitor their daily life in order to detect conditions causing migraine pains. The application is designed to record daily events in most undisturbed way, without major interuptions of normal life flow.",
     ],
     tech: ["Figma"],
     link:
@@ -102,9 +100,9 @@ const careerData = [
     company:
       "Astaldi Ictas, Josef Gartner, Paroc, Lemminkäinen, Globus, freelance, Tver - Saint-Petersburg",
     period: "2010 - 2016",
-    duties: ["Translation", "interpreting", "writing", "proofreading"],
+    duties: ["- translation", "- interpreting", "- writing", "- proofreading"],
     projects: ["construction and manufacturing projects"],
-    tech: ["English, German", "Finnish", "Russian"],
+    tech: ["English", "German", "Finnish", "Russian", "CAT tools: SDL Trados"],
     link: null,
   },
 
@@ -114,13 +112,13 @@ const careerData = [
     company: "Online-marketing agencies",
     period: "2011 - 2012",
     duties: [
-      "advertising",
-      "web-content creation",
-      "SEO copywriting",
-      "translation",
-      "editing",
-      "negotiations with clients",
-      "moderation of an online shoe store community in a social network",
+      "- advertising",
+      "- web-content creation",
+      "- SEO copywriting",
+      "- translation",
+      "- editing",
+      "- negotiations with clients",
+      "- moderation of an online shoe store community in a social network",
     ],
     projects: null,
     tech: null,

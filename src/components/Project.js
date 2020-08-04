@@ -42,7 +42,7 @@ const Project = (props) => {
             {" "}
             {url && (
               <a href={url} target="_blank" rel="noopener noreferrer">
-                Website
+                Link
               </a>
             )}
             {github && (
