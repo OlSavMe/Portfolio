@@ -87,7 +87,7 @@ const projectData = [
     summary:
       "React.js, Context API, React Hooks, SASS/SCSS (mixins, breakpoints, dynamic keys, variables, nesting), Axios, GitHub API, Firebase",
     github: "https://github.com/OlSavMe/Portfolio",
-    url: "https://savkaportfolio.web.app/",
+    url: "https://savkaportfolio.firebaseapp.com/",
     libraries: ["react-router", "react-anchor-link-smooth-scroll"],
   },
   {
@@ -156,17 +156,24 @@ const projectData = [
   },
   {
     id: 5,
-    title: "Contact Form",
+    title: "Nodemailer Contact Form",
     picture: "img/manag.png",
     bigpic: "img/big-form.jpg",
     smallpic: "img/small-form.jpg",
-    features: ["Simple contact form"],
+    features: [
+      "simple contact form",
+      "frontend sends post request to the server",
+      "URI is regiistered at Goggle APIs console",
+      "endpoint's authorization with access and refresh tokens",
+    ],
     tools: [
       "Node.js / Nodemailer",
       "Express",
+      "Axios",
       "React",
-      "OAuth 2.0",
+      "OAuth2 authentication",
       "Google APIs",
+      "Google Developers OAuth 2.0 Playground",
       "dotenv",
     ],
 

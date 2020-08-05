@@ -53,7 +53,9 @@ const Slider = ({ slides }) => {
           <figcaption>
             <a href="#modal" onClick={toggleModal}>
               {" "}
-              <h3>{item.title}</h3>
+              <h3>
+                {item.title} <span>&rsaquo;&rsaquo;</span>
+              </h3>
             </a>
           </figcaption>
           {index === current && (
@@ -73,7 +75,7 @@ const Slider = ({ slides }) => {
                 {" "}
                 {item.url && (
                   <a href={item.url} target="_blank" rel="noopener noreferrer">
-                    Website
+                    Link
                   </a>
                 )}
                 {item.github && (

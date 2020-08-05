@@ -13,6 +13,7 @@
   @include media(mobile, ipad, tablet, tablet-landscape) {
     grid-template-columns: minmax(0, 1fr);
     padding: 1rem;
+    padding-bottom: 20%;
     grid-gap: 1rem;
     align-items: end;
     justify-items: center;
