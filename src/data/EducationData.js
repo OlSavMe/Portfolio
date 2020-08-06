@@ -1,7 +1,7 @@
 export const educationData = [
   {
     id: 19,
-    title: "Front End Development,5cr",
+    title: "Front End Development, 5cr",
     link:
       "http://www.haaga-helia.fi/en/opinto-opas/opintojaksokuvaukset/SWD4TF022",
     desc:
@@ -28,7 +28,7 @@ export const educationData = [
     title: "Introduction to Java Programming, 3cr (Metropolia UAS)",
     link: "https://opinto-opas.metropolia.fi/en/tarjontakorit/en/52976",
     desc:
-      "Algorithms, Java variables, programming statements, expressions and operators, metods, arrays, OOP basics",
+      "Algorithms, Java variables, programming statements, expressions and operators, methods, arrays, OOP basics",
   },
   {
     id: 23,
@@ -49,7 +49,7 @@ export const educationData = [
     title: "Multidisciplinary Software Project, 15cr",
     link: "https://opinto-opas.haaga-helia.fi/course_unit/PRO4TF024",
     desc:
-      "Developing user interface of a game web app with ReactJS, React Material-UI, qr scanner library, react-router, Axios client, using Docker Containers with pgAdmin for local dev environment. Team work with front- and backend developers, designers in Scrum sprints, using git version control and CircleCI for continuos delivery and automated testing.",
+      "Developing user interface of a game web app with ReactJS, React Material-UI, qr scanner library, react-router, Axios client, using Docker Containers with pgAdmin for local dev environment. Team work with front- and backend developers, designers in Scrum sprints, using git version control and CircleCI for continuous delivery and automated testing.",
   },
   {
     id: 28,
@@ -98,7 +98,7 @@ export const educationData = [
     title: "Cloud Service Technologies, 5cr",
     link: "https://opinto-opas.haaga-helia.fi/course_unit/ICT4TF024",
     desc:
-      "Induvidual prject dedicted to CI/CD with Azure Cloud DevOps Services",
+      "Individual project dedicated to CI/CD with Azure Cloud DevOps Services",
     url:
       "https://drive.google.com/file/d/1YvD3OZGGRHA8U4uNKF7-hKOVgk5g2HBH/view",
     video:
@@ -120,7 +120,7 @@ export const educationData = [
     link:
       "https://drive.google.com/file/d/1C8rGW4zcqYWHC3em8Z1uh_X-C_xKU5hr/view",
     desc:
-      "A week long full-time sprint of developing mobile application prototype for migrane patients",
+      "A week long full-time sprint of developing mobile application prototype for migraine patients",
   },
   {
     id: 7,
@@ -138,7 +138,7 @@ export const educationData = [
     link:
       "https://drive.google.com/file/d/1C8rGW4zcqYWHC3em8Z1uh_X-C_xKU5hr/view",
     desc:
-      "A week long full-time sprint of developing mobile application prototype for migrane patients",
+      "A week long full-time sprint of developing mobile application prototype for migraine patients",
     url:
       "https://www.figma.com/proto/MXr37r7aAN7txw7QVJFY03/READY-migraine-map-vol2-(Copy)?node-id=29%3A6&scaling=scale-down",
   },

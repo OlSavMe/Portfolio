@@ -54,7 +54,7 @@ const Slider = ({ slides }) => {
             <a href="#modal" onClick={toggleModal}>
               {" "}
               <h3>
-                {item.title} <span>&rsaquo;&rsaquo;</span>
+                <span>&rsaquo;&rsaquo;</span> {item.title}
               </h3>
             </a>
           </figcaption>

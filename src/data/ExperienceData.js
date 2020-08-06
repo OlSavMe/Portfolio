@@ -84,10 +84,10 @@ const careerData = [
     duties: [
       "- developing interactive UX prototype",
       "- creating user portrait in course of team brainstorming",
-      "- work in a multidiscplinary team",
+      "- work in a multidisciplinary team",
     ],
     projects: [
-      "Mobile application for teenagers suffering from migraine. The application helps patients to monitor their daily life in order to detect conditions causing migraine pains. The application is designed to record daily events in most undisturbed way, without major interuptions of normal life flow.",
+      "Mobile application for teenagers suffering from migraine. The application helps patients to monitor their daily life in order to detect conditions causing migraine pains. The application is designed to record daily events in most undisturbed way, without major interruptions of normal life flow.",
     ],
     tech: ["Figma"],
     link:

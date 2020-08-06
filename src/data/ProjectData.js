@@ -34,7 +34,7 @@ const projectData = [
     ],
 
     description:
-      "The project was completed during my internship in The Shortcut community. The application was conceived as an improved alternative to the company's old Wordpress based website. A 'clean and lean' design approach was adopted. The focus was on dymanic fetching of events and trainings info, brand-relevant visuals, contact and reference info, user-type targeted navigation. The new web-site performs reprasentative, communicative, 'story-telling', linking functions",
+      "The project was completed during my internship in The Shortcut community. The application was conceived as an improved alternative to the company's old Wordpress based website. A 'clean and lean' design approach was adopted. The focus was on dynamic fetching of events and trainings info, brand-relevant visuals, contact and reference info, user-type targeted navigation. The new web-site performs representative, communicative, 'story-telling', linking functions",
     summary:
       "React v16.8, SASS/SCSS, Axios, Wordpress as headless CMS, Eventbrite API, Firebase, 'clean design' approach",
     github: "https://github.com/OlSavMe/Current-CV-Website",
@@ -50,7 +50,7 @@ const projectData = [
   },
   {
     id: 2,
-    title: "Current Portfoio",
+    title: "Current Portfolio",
     picture: "img/cur.jpg",
     bigpic: "img/big-cur.jpg",
     smallpic: "img/small-cur.jpg",
@@ -60,11 +60,11 @@ const projectData = [
       "animated underline on navlink hover",
       "mobile burger menu",
       "animated modal windows",
-      "horisontal image slider with controls",
+      "horizontal image slider with controls",
       "accordion with expanded panels and animated open-close sign",
-      "vertical text carousel with on-hover contol",
+      "vertical text carousel with on-hover control",
       "animated gif logo",
-      "animated scrolldown indicator",
+      "animated scroll-down indicator",
       "rotated 'polaroid' image",
       "hash group with anchor linking",
       "filtering button group",
@@ -83,7 +83,7 @@ const projectData = [
     ],
 
     description:
-      "My new portfolio website was created in React with minimum use of other libraries. App state is managed with Context API and Hooks, my GitHub repositories' data is fetched and filtered through GitHub API with Axios, code reuse is implemented either with composition or inheritance. App responsiveness is achieved with use of grid and flex containers, as well as SASS breakpoints with dynamic keys for easier styling. The website is designed in three-color pallette with orange as an accent. The three colors - orange, white and light-grey, - are united in the customized animated logo.",
+      "My new portfolio website was created in React with minimum use of other libraries. App state is managed with Context API and Hooks, my GitHub repositories' data is fetched and filtered through GitHub API with Axios, code reuse is implemented either with composition or inheritance. App responsiveness is achieved with use of grid and flex containers, as well as SASS breakpoints with dynamic keys for easier styling. The website is designed in three-colour palette with orange as an accent. The three colours - orange, white and light-grey, - are united in the customised animated logo.",
     summary:
       "React.js, Context API, React Hooks, SASS/SCSS (mixins, breakpoints, dynamic keys, variables, nesting), Axios, GitHub API, Firebase",
     github: "https://github.com/OlSavMe/Portfolio",
@@ -147,7 +147,7 @@ const projectData = [
     ],
 
     description:
-      "Order Manager app is storing orders' info, lets user add/edit orders, admin user can also delete orders. The interface shows current date and total number of orders. Upon login users are identified by type. The app was created as an individual assignment within the Server Programmig course.",
+      "Order Manager app is storing orders' info, lets user add/edit orders, admin user can also delete orders. The interface shows current date and total number of orders. Upon login users are identified by type. The app was created as an individual assignment within the Server Programming course.",
     summary:
       "Java, Spring Boot framework, Maven software project management tool, Thymeleaf template engine, SQL, Bootstrap",
     github: "https://github.com/OlSavMe/Order-Manager",
@@ -161,16 +161,17 @@ const projectData = [
     bigpic: "img/big-form.jpg",
     smallpic: "img/small-form.jpg",
     features: [
-      "simple contact form",
+      "contact form sending user's message through my gmail account to my other email account",
       "frontend sends post request to the server",
-      "URI is regiistered at Goggle APIs console",
-      "endpoint's authorization with access and refresh tokens",
+      "URI is registered at Google APIs console",
+      "endpoint's authorisation with access and refresh tokens",
     ],
     tools: [
       "Node.js / Nodemailer",
       "Express",
       "Axios",
       "React",
+      "Postman",
       "OAuth2 authentication",
       "Google APIs",
       "Google Developers OAuth 2.0 Playground",
@@ -178,10 +179,10 @@ const projectData = [
     ],
 
     description:
-      "Contact form with backend implemented in Node.js, its Nodemailer module and Express",
+      "React.js contact form with backend implemented in Node.js, its Nodemailer module and Express",
     summary: "Nodemailer, Node.js, Express, React, OAuth 2.0, Google APIs",
     github: "https://github.com/OlSavMe/Contact-Form",
-    url: null,
+    url: "https://mail-contact-form.firebaseapp.com/",
     libraries: null,
   },
   {
@@ -199,7 +200,7 @@ const projectData = [
     tools: ["Azure Cloud", "Azure pipelines", "Visual Studio", "GitHub"],
 
     description:
-      "Studying tools for Continuous Integration and Continuous Delivery provided by Azure Cloud for web development. Individual assignment for Cloud Services course",
+      "Studying tools for Continuous Integration and Continuous Delivery provided by Azure Cloud for web development. Individual assignment for the Cloud Services course",
     summary:
       "Azure Cloud, CI/CD pipelines, DevOps projects, YAML, Visual Studio",
     github:
