@@ -1,5 +1,5 @@
 import React from "react";
-import SlideWrapper from "../components/slider/Slider";
+import Slider from "../components/slider/Slider";
 import Github from "../components/Github";
 import DownArrow from "../components/DownArrow";
 import "../styles/Portfolio.scss";
@@ -9,7 +9,7 @@ function Portfolio() {
     <div className="portfolio-container">
       <section className="projects-section">
         <div className="slider-container">
-          <SlideWrapper />
+          <Slider />
         </div>
         <DownArrow title="GitHub Repositories" destination="github-container" />
       </section>

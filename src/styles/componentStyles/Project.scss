@@ -32,28 +32,23 @@
       background-color: rgba(36, 36, 36, 0.7);
       width: 100%;
 
-      > a {
-        cursor: pointer;
-        text-decoration: none;
+      > h3 {
+        color: white;
+        padding: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 300;
         margin: 0;
-        > h3 {
-          color: white;
-          padding: 1rem;
+        > span {
           font-size: 1.3rem;
-          font-weight: 300;
-          margin: 0;
-          > span {
-            font-size: 1.3rem;
-            transition: all 0.4s linear;
-            padding: 0 5px;
-            color: $yellow;
-          }
-        }
-        > h3:hover > span {
           transition: all 0.4s linear;
-          padding: 0 20px;
-          transform: scale(2);
+          padding: 0 5px;
+          color: $yellow;
         }
+      }
+      > h3:hover > span {
+        transition: all 0.4s linear;
+        padding: 0 20px;
+        transform: scale(2);
       }
     }
   }

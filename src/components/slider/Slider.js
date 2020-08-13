@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../../styles/componentStyles/Slider.scss";
-import Modal from "../Modal";
+import Modal from "../modals/Modal";
+import ModalContent from "../modals/ModalContent";
 import projectData from "../../data/ProjectData";
 
-const Slider = ({ slides }) => {
+const Slider = () => {
   const [current, setCurrent] = useState(0);
-  const { length } = slides;
+  const { length } = projectData;
   const [show, setShow] = useState(false);
   const sliderRef = useRef(0);
 
@@ -38,11 +39,9 @@ const Slider = ({ slides }) => {
     sliderRef.current.focus();
   }, []);
 
-  console.log(sliderRef);
-
   return (
     <section className="slider" ref={sliderRef} onKeyDown={moveKeys}>
-      {slides.map((item, index) => (
+      {projectData.map((item, index) => (
         <div
           className={index === current ? "slide active" : "slide"}
           key={index}
@@ -60,7 +59,7 @@ const Slider = ({ slides }) => {
           </figcaption>
           {index === current && (
             <picture>
-              <source media="(min-width: 480px)" srcset={item.bigpic} />
+              <source media="(min-width: 480px)" srcSet={item.bigpic} />
               <img
                 className="screenshot"
                 src={item.smallpic}
@@ -70,6 +69,7 @@ const Slider = ({ slides }) => {
           )}
           {show && (
             <Modal toggleModal={toggleModal} id="modal">
+              <ModalContent />
               <h3>{item.title}</h3>
               <div className="links">
                 {" "}
@@ -121,6 +121,11 @@ const Slider = ({ slides }) => {
                   </div>
                 )}
               </section>
+              <img
+                className="bottom-pic"
+                src={item.bigpic}
+                alt={`${item.title}`}
+              />
             </Modal>
           )}
         </div>
@@ -132,7 +137,7 @@ const Slider = ({ slides }) => {
         <span>&rsaquo;</span>
       </button>
       <div className="dots">
-        {slides.map((i, index) => (
+        {projectData.map((i, index) => (
           <span
             key={index}
             className={index === current ? "dot active" : "dot"}
@@ -143,12 +148,4 @@ const Slider = ({ slides }) => {
   );
 };
 
-const SlideWrapper = () => {
-  return (
-    <>
-      <Slider slides={projectData} />
-    </>
-  );
-};
-
-export default SlideWrapper;
+export default Slider;

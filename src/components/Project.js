@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "../styles/componentStyles/Project.scss";
-import Modal from "./Modal";
+import Modal from "./modals/Modal";
 
 const Project = (props) => {
+  const [show, setShow] = useState(false);
   const {
     title,
     bigpic,
@@ -13,25 +14,21 @@ const Project = (props) => {
     github,
     url,
     libraries,
+    id,
   } = props;
-
-  const [show, setShow] = useState(false);
 
   const toggleModal = (e) => {
     setShow(!show);
   };
 
   return (
-    <a href="#modal" onClick={toggleModal} className="card">
+    <a href="#modal" onClick={toggleModal} className="card" key={id}>
       <figure>
         <img src={bigpic} alt="project"></img>
         <figcaption>
-          <a href="#modal" onClick={toggleModal}>
-            {" "}
-            <h3>
-              {title} <span>&rsaquo;&rsaquo;</span>
-            </h3>
-          </a>
+          <h3>
+            {title} <span>&rsaquo;&rsaquo;</span>
+          </h3>
         </figcaption>
       </figure>
       <p>{summary}</p>
@@ -84,9 +81,11 @@ const Project = (props) => {
               </div>
             )}
           </section>
+          <img className="bottom-pic" src={bigpic} alt={`${title}`} />
         </Modal>
       )}
     </a>
   );
 };
+
 export default Project;

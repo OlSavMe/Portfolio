@@ -3,13 +3,13 @@ import "../styles/componentStyles/References.scss";
 
 const References = () => {
   return (
-    <div class="content-slider">
-      <span class="tooltip">Hover to pause, unhover to unpause</span>
-      <div class="ref">
-        <div class="mask">
+    <div className="content-slider">
+      <span className="tooltip">Hover to pause, unhover to unpause</span>
+      <div className="ref">
+        <div className="mask">
           <ul>
-            <li class="anim1">
-              <div class="quote">
+            <li className="anim1">
+              <div className="quote">
                 When I was interviewing Olga for the developer position, I was
                 very impressed noticing how level headed and professional she
                 is. Olga is very practical with expectations setting and
@@ -26,12 +26,12 @@ const References = () => {
                 great professional, friendly, and welcoming team player and a
                 developer who works very calmly under pressure.
               </div>
-              <div class="source">
+              <div className="source">
                 - Mojjammil Khandker, CTO at The Shortcut
               </div>
             </li>
-            <li class="anim2">
-              <div class="quote">
+            <li className="anim2">
+              <div className="quote">
                 I worked with Olga on the development of the new website for The
                 Shortcut community. Olga proved to be very methodological when
                 faced with unfamiliar technologies, which was very motivating
@@ -44,10 +44,10 @@ const References = () => {
                 Olga to anyone looking to add to their team of software
                 engineers!
               </div>
-              <div class="source">- Alina Ilina, Web Developer</div>
+              <div className="source">- Alina Ilina, Web Developer</div>
             </li>
-            <li class="anim3">
-              <div class="quote">
+            <li className="anim3">
+              <div className="quote">
                 Olga worked at the Paroc stone wool plant construction project
                 for the period of July 2012 - December 2013. Olga’s prime
                 responsibility was interpretation at meetings, trainings, check
@@ -56,12 +56,12 @@ const References = () => {
                 the Paroc process and construction works. Cooperation has been
                 excellent due to her fascinating character.
               </div>
-              <div class="source">
+              <div className="source">
                 - Pekka Kuokkanen, Technology Project Leader, Paroc Group OY
               </div>
             </li>
-            <li class="anim4">
-              <div class="quote">
+            <li className="anim4">
+              <div className="quote">
                 When I was interviewing Olga for the developer position, I was
                 very impressed noticing how level headed and professional she
                 is. Olga is very practical with expectations setting and
@@ -78,12 +78,12 @@ const References = () => {
                 great professional, friendly, and welcoming team player and a
                 developer who works very calmly under pressure.
               </div>
-              <div class="source">
+              <div className="source">
                 - Mojjammil Khandker, CTO at The Shortcut
               </div>
             </li>
-            <li class="anim5">
-              <div class="quote">
+            <li className="anim5">
+              <div className="quote">
                 I worked with Olga on the development of the new website for The
                 Shortcut community. Olga proved to be very methodological when
                 faced with unfamiliar technologies, which was very motivating
@@ -96,7 +96,7 @@ const References = () => {
                 Olga to anyone looking to add to their team of software
                 engineers!
               </div>
-              <div class="source">- Alina Ilina, Web Developer</div>
+              <div className="source">- Alina Ilina, Web Developer</div>
             </li>
           </ul>
         </div>

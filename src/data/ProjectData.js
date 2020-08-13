@@ -119,7 +119,7 @@ const projectData = [
     summary:
       "React, Axios, GitHub API, React Material-UI, react-select, SASS/SCSS",
     github: "https://github.com/OlSavMe/Current-CV-Website",
-    url: "https://o-savka.web.app",
+    url: "https://o-savka.firebaseapp.com",
     libraries: ["React Material-UI", "react-router", "react-select"],
   },
   {
@@ -207,6 +207,40 @@ const projectData = [
       "https://www.youtube.com/watch?v=9xay2h1djfo&list=PLf8VCwwYAvPWxZJ8q_HCDtfuYc42G9iKM",
     url:
       "https://drive.google.com/file/d/1YvD3OZGGRHA8U4uNKF7-hKOVgk5g2HBH/view",
+    libraries: null,
+  },
+  {
+    id: 7,
+    title: "DoGood app UX design",
+    picture: null,
+    bigpic: "img/big-dogood.jpg",
+    smallpic: "img/big-dogood.jpg",
+    features: ["Interactive prototype of a mobile application"],
+    tools: ["Figma"],
+
+    description:
+      "The prototype was developed by a team of two UX designers during The Digital Prototyping Week. Volunteer-company matching mobile app is intended to help volunteers and job providing organisations find one another by means of online netwoking, job type classification and volunteer profiles database.",
+    summary: "Figma prototyping, user's persona",
+    github: null,
+    url:
+      "https://www.figma.com/proto/P9IeRig2R8qgdylrxklhUC/Prototyping-UI-Kit-(Copy)?node-id=311%3A263&scaling=scale-down",
+    libraries: null,
+  },
+  {
+    id: 8,
+    title: "Migraine Map app UX design",
+    picture: null,
+    bigpic: "img/big-migr.jpg",
+    smallpic: "img/big-migr.jpg",
+    features: ["Interactive prototype of a mobile application"],
+    tools: ["Figma"],
+
+    description:
+      "The Migraine Map app was created in a multidisciplinary team during the RIGA MUDDIE WEEK. The mobile application's prospective users are teenagers suffering from migraine. The application helps patients to monitor their daily life in order to detect conditions causing migraine pains. The application is designed to record daily events in most undisturbed way, without major interruptions of normal life flow",
+    summary: "Figma prototyping, user's persona",
+    github: null,
+    url:
+      "https://www.figma.com/proto/P9IeRig2R8qgdylrxklhUC/Prototyping-UI-Kit-(Copy)?node-id=311%3A263&scaling=scale-down",
     libraries: null,
   },
 ];

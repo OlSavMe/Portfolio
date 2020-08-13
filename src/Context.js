@@ -18,7 +18,6 @@ const Provider = (props) => {
     });
   };
 
-  console.log(repos);
   const nofork = repos.filter((repo) => repo.fork === false);
 
   return (

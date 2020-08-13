@@ -5,7 +5,7 @@ const careerData = [
     company: "The Shortcut, Helsinki",
     period: "Jan 2020 - Jul 2020",
     duties: [
-      "- developed responsive web interface using SASS, react-bootstrap, flex containers, Ant Design",
+      "- developed responsive web interfaces using SASS, react-bootstrap, flex containers, Ant Design",
       "- configured APIs consumption using Axios client, asynchronous HTTP requests, React Hooks",
       "- created required WordPress API endpoints",
       "- filtered and formatted fetched API data",

@@ -29,7 +29,7 @@ const ButtonGroup = ({ setKeyword }) => {
             }}
             className={selected === item.id ? "selected" : ""}
           >
-            <label for={item.id}>{item.name}</label>
+            <label htmlFor={item.id}>{item.name}</label>
           </li>
         ))}
       </ul>

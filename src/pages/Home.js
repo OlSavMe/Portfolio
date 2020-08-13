@@ -2,9 +2,9 @@ import React from "react";
 import Photo from "../components/Photo";
 import "../styles/Home.scss";
 import "../data/ProjectData";
-import projectData from "../data/ProjectData";
-import Project from "../components/Project";
+import Projects from "../components/Project";
 import DownArrow from "../components/DownArrow";
+import projectData from "../data/ProjectData";
 
 function Home() {
   return (
@@ -15,7 +15,7 @@ function Home() {
       </div>
       <section id="projects">
         {projectData.map((item, index) => (
-          <Project key={index} {...item} index={index} />
+          <Projects key={index} {...item} index={index} />
         ))}
       </section>
     </div>
