@@ -37,7 +37,7 @@ const projectData = [
       "The project was completed during my internship in The Shortcut community. The application was conceived as an improved alternative to the company's old Wordpress based website. A 'clean and lean' design approach was adopted. The focus was on dynamic fetching of events and trainings info, brand-relevant visuals, contact and reference info, user-type targeted navigation. The new web-site performs representative, communicative, 'story-telling', linking functions",
     summary:
       "React v16.8, SASS/SCSS, Axios, Wordpress as headless CMS, Eventbrite API, Firebase, 'clean design' approach",
-    github: "https://github.com/OlSavMe/Current-CV-Website",
+    github: "https://github.com/OlSavMe/React-Shortcut-Website",
     url: "https://beta.theshortcut.org/",
     libraries: [
       "react-bootstrap",
@@ -118,7 +118,7 @@ const projectData = [
       "While working on CV website I experimented with background images and videos (videos are not included into the final version), semi-transparent overlays, box shadowing and svg shapes. React Material-UI components and icons were utilized for top navbar (in Material-UI documentation - 'bottom navbar'), Material-UI controlled accordion with expanded panels was used for education section. react-select component was adopted for the drop-down menu with customized styling",
     summary:
       "React, Axios, GitHub API, React Material-UI, react-select, SASS/SCSS",
-    github: "https://github.com/OlSavMe/Current-CV-Website",
+    github: "https://github.com/OlSavMe/Earlier-CV-Website",
     url: "https://o-savka.firebaseapp.com",
     libraries: ["React Material-UI", "react-router", "react-select"],
   },
@@ -240,7 +240,7 @@ const projectData = [
     summary: "Figma prototyping, user's persona",
     github: null,
     url:
-      "https://www.figma.com/proto/P9IeRig2R8qgdylrxklhUC/Prototyping-UI-Kit-(Copy)?node-id=311%3A263&scaling=scale-down",
+      "https://www.figma.com/proto/MXr37r7aAN7txw7QVJFY03/READY-migraine-map-vol2-(Copy)?node-id=29%3A6&scaling=scale-down",
     libraries: null,
   },
 ];
