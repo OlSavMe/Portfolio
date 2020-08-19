@@ -9,7 +9,9 @@ html {
   margin: 0;
   height: 100%;
   font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.03em;
   font-weight: 300;
+
   scroll-behavior: smooth;
   animation: fade 1s ease-in-out;
 }

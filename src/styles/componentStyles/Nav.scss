@@ -24,8 +24,8 @@ nav {
     > a {
       color: $textColor;
       font-size: 1.2rem;
-      margin: 0 1.2rem;
-      padding: 0.1rem 0;
+      margin: 0.1rem 1.2rem;
+      padding: 0.3rem 0;
       text-decoration: none;
       display: inline-block;
       position: relative;
@@ -37,8 +37,8 @@ nav {
       display: block;
       height: 3px;
       position: absolute;
-      background: rgba(249, 166, 2, 0.3);
-      opacity: 1;
+      background: rgba(249, 166, 2, 0.5);
+      // opacity: 1;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       width: 0;
     }
@@ -48,30 +48,16 @@ nav {
     }
 
     .selectedLink:after {
-      width: 100%;
-      height: 3px;
-      top: 24px;
-      background: $yellow;
-      opacity: 0.6;
-      z-index: -1;
-    }
-
-    .selectedLink:before {
       background: none repeat scroll 0 0 transparent;
       bottom: 0;
       content: "";
       display: block;
       height: 3px;
       position: absolute;
-      background: $yellow;
-      opacity: 0.6;
+      background: rgba(249, 166, 2, 1);
+      // opacity: 1;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 0;
-    }
-
-    .selectedLink:hover:before {
       width: 100%;
-      left: 0;
     }
   }
 

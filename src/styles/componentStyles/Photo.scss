@@ -83,14 +83,7 @@
     margin: 0;
     font-family: inherit;
     padding: 0;
-    line-height: 3rem;
-
-    // -webkit-animation-name: slidedown;
-    // -webkit-animation-duration: 1.5s;
-    // -webkit-animation-delay: 2s;
-    // animation-name: slidedown;
-    // animation-duration: 1.5s;
-    // animation-delay: 2s;
+    line-height: 3.2rem;
 
     @include media(mobile, ipad, tablet) {
       line-height: 2.3rem;
@@ -98,6 +91,10 @@
 
     @include tablet-landscape {
       line-height: 2.5rem;
+    }
+
+    span {
+      margin-right: 0.1rem;
     }
   }
 }
