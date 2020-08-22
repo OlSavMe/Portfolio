@@ -36,7 +36,7 @@
       }
       &.selected {
         box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.7);
-        background-color: rgba(249, 166, 2, 0.5);
+        // background-color: rgba(249, 166, 2, 0.5);
         transform: scale(1.03);
       }
       @include media(mobile, ipad) {
