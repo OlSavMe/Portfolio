@@ -73,6 +73,7 @@
     height: 95%;
     opacity: 0;
     transition: all 1s ease;
+    overflow: hidden;
 
     figcaption {
       color: #ffff;
@@ -134,6 +135,10 @@
 
   .slide.active {
     opacity: 1;
+
+    &:hover {
+      transform: scale(1.7);
+    }
   }
 
   .dots {
