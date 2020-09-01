@@ -105,24 +105,6 @@ export const educationData = [
       "https://www.youtube.com/watch?v=9xay2h1djfo&list=PLf8VCwwYAvPWxZJ8q_HCDtfuYc42G9iKM&index=1",
   },
   {
-    id: 4,
-    title:
-      "The Digital Environment in Health and Welfare Services and its Ethics and Regulations, 5cr",
-    link:
-      "https://journal.laurea.fi/muddie-week-multiprofessional-digital-development-service-design-innovation-model-for-higher-education-in-the-context-of-digital-health-and-wellbeing/",
-    desc:
-      "General Data Protection Regulation, digital innovations in healthcare and connected ethical issues",
-  },
-  {
-    id: 5,
-    title:
-      "Digital Service Development and Information Management in Health and Welfare Services, 5cr",
-    link:
-      "https://drive.google.com/file/d/1C8rGW4zcqYWHC3em8Z1uh_X-C_xKU5hr/view",
-    desc:
-      "A week long full-time sprint of developing mobile application prototype for migraine patients",
-  },
-  {
     id: 7,
     title:
       "The Digital Environment in Health and Welfare Services and its Ethics and Regulations, 5cr",
