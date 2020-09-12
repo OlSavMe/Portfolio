@@ -7,9 +7,19 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Logo from "./components/Logo";
 import ScrollToTop from "./components/nav/ScrollToTop";
+import ReactGA from "react-ga";
+import { createBrowserHistory } from "history";
 
 const App = () => {
   const [open, setOpen] = useState(false);
+  const history = createBrowserHistory();
+
+  // Initialize google analytics page view tracking
+  history.listen((location) => {
+    ReactGA.initialize("UA-173430018-1");
+    ReactGA.set({ page: location.pathname }); // Update the user's current page
+    ReactGA.pageview(location.pathname); // Record a pageview for the given page
+  });
 
   return (
     <Router>
