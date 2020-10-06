@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../../styles/componentStyles/Slider.scss";
 import Modal from "../modals/Modal";
-import ModalContent from "../modals/ModalContent";
 import projectData from "../../data/ProjectData";
 
 const Slider = () => {
@@ -69,7 +68,6 @@ const Slider = () => {
           )}
           {show && (
             <Modal toggleModal={toggleModal} id="modal">
-              <ModalContent />
               <h3>{item.title}</h3>
               <div className="links">
                 {" "}
