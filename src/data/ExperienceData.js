@@ -36,7 +36,7 @@ const careerData = [
       "The Shortcut Database Management System",
     ],
 
-    link: "https://beta.theshortcut.org/",
+    link: "https://theshortcut.org/",
   },
   {
     id: 2,

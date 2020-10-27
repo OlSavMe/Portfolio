@@ -38,7 +38,7 @@ const projectData = [
     summary:
       "React v16.8, SASS/SCSS, Axios, Wordpress as headless CMS, Eventbrite API, Firebase, 'clean design' approach",
     github: "https://github.com/OlSavMe/React-Shortcut-Website",
-    url: "https://beta.theshortcut.org/",
+    url: "https://theshortcut.org/",
     libraries: [
       "react-bootstrap",
       "react-router",
