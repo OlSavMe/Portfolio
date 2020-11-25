@@ -49,6 +49,46 @@ const projectData = [
     ],
   },
   {
+    id: 8,
+    title: "Alejandra Beauty Salon website",
+    picture: "img/ale.jpg",
+    bigpic: "img/big-ale.jpg",
+    smallpic: "img/small-ale.jpg",
+    features: [
+      "responsive layout with css grid",
+      "bilingual navigation",
+      "gallery of images",
+      "lightbox with comments container",
+      "slider",
+      "customised WordPress admin",
+      "embedded external booking system",
+      "contact form",
+      "Google map",
+    ],
+
+    tools: [
+      "PHP",
+      "SASS/SCSS",
+      "JavaScript",
+      "Webpack",
+      "MAMP",
+      "WordPress",
+      "Figma",
+      "git",
+    ],
+
+    description:
+      "New bilingual website for Alejandra Beauty Salon, Helsinki. Design solution and a WordPress theme created by me from scratch using PHP, SASS, JavaScript. Minimalist flat design features colors of the company's logo.",
+    summary:
+      "Own WordPress theme created from scratch to implement the unique design, PHP, SASS, Laravel Mix, MAMP",
+    github: "https://github.com/OlSavMe/Alejandra-Theme",
+    url: "https://www.alejandra.fi/",
+    libraries: [
+      "Laravel Mix",
+      "JQuery",
+    ],
+  },
+  {
     id: 2,
     title: "Current Portfolio",
     picture: "img/cur.jpg",

@@ -1,5 +1,33 @@
 const careerData = [
   {
+    id: 7,
+    position: "Sole Web Developer",
+    company: "Alejandra Beauty Salon",
+    period: "September 2020 - present",
+    duties: [
+      "- developed new brand-relevant design of the website",
+      "- developed new WordPress theme from scratch to implement the design",
+      "- customised WordPress admin panel by adding custom posts, taxonomies, and data querying",
+      "- congifured bilingual navigation with Polylang plugin and predefined php functions",
+      "- set up local development environment and staging environment, migrated the new website to official domain"
+    ],
+    tech: [
+      "PHP",
+      "SASS/SCSS",
+      "JQuery",
+      "Laravel Mix",
+      "WordPress",
+      "MAMP",
+      "Figma",
+      "git",
+    ],
+    projects: [
+      "Alejandra public website",
+    ],
+
+    link: "https://www.alejandra.fi/",
+  },
+  {
     id: 1,
     position: "Frontend Web Developer",
     company: "The Shortcut, Helsinki",

@@ -11,7 +11,7 @@ function Education() {
           <h3>
             <span>2017-2020 </span>
             Haaga Helia University of Applied Sciences, Software Development
-            (GPA: 4.08/5, 263 cr)
+            (GPA: 4.1/5, 273 cr)
           </h3>
         </div>
         <div id="card">
