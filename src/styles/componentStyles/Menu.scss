@@ -34,6 +34,10 @@
         color: orange;
       }
     }
+
+    .selectedMobileLink {
+      color: $yellow;
+    }
     &.closed {
       transform: translateX(-100%);
     }

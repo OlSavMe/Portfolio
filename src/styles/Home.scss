@@ -28,8 +28,8 @@
     margin-top: 2rem;
     grid-gap: 3rem;
 
-    @include min-media(mobile, ipad, tablet) {
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    @include min-media(mobile, ipad) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       padding: 1rem;
     }
 

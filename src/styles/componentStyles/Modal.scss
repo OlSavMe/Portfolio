@@ -15,6 +15,8 @@
   animation-duration: 0.8s;
 
   .content {
+    display: flex;
+    flex-direction: column;
     background-color: #fefefe;
     margin: 6% auto;
     min-height: 80%;
@@ -91,10 +93,18 @@
         }
       }
 
-      .bottom-pic {
-        width: 100%;
-        height: auto;
-        padding: 5%;
+      .bottom-pic-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 ratio */
+        height: 0;
+        overflow: hidden;
+        .bottom-pic {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          object-fit: cover;
+        }
       }
     }
   }

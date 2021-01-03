@@ -81,7 +81,9 @@ const Project = (props) => {
               </div>
             )}
           </section>
-          <img className="bottom-pic" src={bigpic} alt={`${title}`} />
+          <div className="bottom-pic-wrapper">
+            <img className="bottom-pic" src={bigpic} alt={`${title}`} />
+          </div>
         </Modal>
       )}
     </a>

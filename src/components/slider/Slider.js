@@ -21,11 +21,11 @@ const Slider = () => {
   };
 
   const handleTouchEnd = () => {
-    if (touchStart - touchEnd > 70) {
+    if (touchStart - touchEnd > 80) {
       toNext();
     }
 
-    if (touchStart - touchEnd < -70) {
+    if (touchStart - touchEnd < -80) {
       toPrev();
     }
   };
@@ -159,11 +159,13 @@ const Slider = () => {
                   </div>
                 )}
               </section>
-              <img
-                className="bottom-pic"
-                src={item.bigpic}
-                alt={`${item.title}`}
-              />
+              <div className="bottom-pic-wrapper ">
+                <img
+                  className="bottom-pic"
+                  src={item.bigpic}
+                  alt={`${item.title}`}
+                />
+              </div>
             </Modal>
           )}
         </div>
