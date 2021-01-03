@@ -5,10 +5,12 @@ import { All, Filtered, Deployed } from "../components/repos/FilteredRepos";
 
 import { Context } from "../Context";
 
-function Github(props) {
+function Github() {
   const appContext = useContext(Context);
   const { nofork } = appContext;
   const [keyword, setKeyword] = useState("all");
+
+  console.log(nofork);
 
   const getRepos = () => {
     // eslint-disable-next-line
@@ -18,6 +20,8 @@ function Github(props) {
       case "Java":
         return <Filtered keyword={keyword} nofork={nofork} />;
       case "JavaScript":
+        return <Filtered keyword={keyword} nofork={nofork} />;
+      case "PHP":
         return <Filtered keyword={keyword} nofork={nofork} />;
       case "HTML":
         return <Filtered keyword={keyword} nofork={nofork} />;

@@ -7,6 +7,7 @@ const ButtonGroup = ({ setKeyword }) => {
     { value: "deployed", id: "b2", btn: "i2", name: "Only Deployed" },
     { value: "JavaScript", id: "b3", btn: "i3", name: "JavaScript & React" },
     { value: "Java", id: "b4", btn: "i4", name: "Java" },
+    { value: "PHP", id: "b6", btn: "i6", name: "PHP" },
     { value: "HTML", id: "b5", btn: "i5", name: "CSS & JQuery & Bootstrap" },
   ];
   const [selected, setSelected] = useState("b1");

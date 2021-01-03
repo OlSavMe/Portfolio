@@ -50,7 +50,7 @@ const projectData = [
   },
   {
     id: 8,
-    title: "Alejandra Beauty Salon website",
+    title: "Alejandra Salon website",
     picture: "img/ale.jpg",
     bigpic: "img/big-ale.jpg",
     smallpic: "img/small-ale.jpg",
@@ -83,10 +83,34 @@ const projectData = [
       "Own WordPress theme created from scratch to implement the unique design, PHP, SASS, Laravel Mix, MAMP",
     github: "https://github.com/OlSavMe/Alejandra-Theme",
     url: "https://www.alejandra.fi/",
-    libraries: [
-      "Laravel Mix",
-      "JQuery",
+    libraries: ["Laravel Mix", "JQuery"],
+  },
+  {
+    id: 9,
+    title: "Koho Design Portfolio",
+    picture: "img/koho.jpg",
+    bigpic: "img/big-koho.jpg",
+    smallpic: "img/small-koho.jpg",
+    features: [
+      "editable content using Contentful API-first service",
+      "responsive layout with css grid",
+      "image slider with mobile touch navigation",
     ],
+
+    tools: [
+      "React.js",
+      "React Context API",
+      "SASS/SCSS",
+      "Contentful Content Delivery API",
+      "Firebase",
+    ],
+
+    description: "Designer's Portfolio dynamic website with editable content",
+    summary:
+      "Responsive React app using Contentful API-first service and React Context API",
+    github: "https://github.com/OlSavMe/koho-website",
+    url: "https://koho-create.firebaseapp.com/",
+    libraries: ["React Router"],
   },
   {
     id: 2,
@@ -129,6 +153,32 @@ const projectData = [
     github: "https://github.com/OlSavMe/Portfolio",
     url: "https://savkaportfolio.firebaseapp.com/",
     libraries: ["react-router", "react-anchor-link-smooth-scroll"],
+  },
+  {
+    id: 10,
+    title: "Fyggex news",
+    picture: "img/fyggex.jpg",
+    bigpic: "img/big-fyggex.jpg",
+    smallpic: "img/small-fyggex.jpg",
+    features: [
+      "responsive layout with flexbox",
+      "data fetching with Axios and WordPress headless CMS",
+      "on loading skeleton",
+    ],
+
+    tools: ["React", "WordPress API", "SASS", "Axios", "Firebase"],
+
+    description: "Fyggex news fetching, test task",
+    summary: "Axios, React, SASS, date formatting with Moment.js",
+    github: "https://github.com/OlSavMe/Fyggex-News",
+    url: "https://fyg-test-olga.firebaseapp.com/",
+    libraries: [
+      "Moment.js",
+      "react-skeleton-loading",
+      "react-html-parser",
+      "react-bootstrap",
+      "react-icons",
+    ],
   },
   {
     id: 3,
@@ -194,37 +244,37 @@ const projectData = [
     url: null,
     libraries: null,
   },
-  {
-    id: 5,
-    title: "Nodemailer Contact Form",
-    picture: "img/manag.png",
-    bigpic: "img/big-form.jpg",
-    smallpic: "img/small-form.jpg",
-    features: [
-      "contact form sending user's message through my gmail account to my other email account",
-      "frontend sends post request to the server",
-      "URI is registered at Google APIs console",
-      "endpoint's authorisation with access and refresh tokens",
-    ],
-    tools: [
-      "Node.js / Nodemailer",
-      "Express",
-      "Axios",
-      "React",
-      "Postman",
-      "OAuth2 authentication",
-      "Google APIs",
-      "Google Developers OAuth 2.0 Playground",
-      "dotenv",
-    ],
+  // {
+  //   id: 5,
+  //   title: "Nodemailer Contact Form",
+  //   picture: "img/manag.png",
+  //   bigpic: "img/big-form.jpg",
+  //   smallpic: "img/small-form.jpg",
+  //   features: [
+  //     "contact form sending user's message through my gmail account to my other email account",
+  //     "frontend sends post request to the server",
+  //     "URI is registered at Google APIs console",
+  //     "endpoint's authorisation with access and refresh tokens",
+  //   ],
+  //   tools: [
+  //     "Node.js / Nodemailer",
+  //     "Express",
+  //     "Axios",
+  //     "React",
+  //     "Postman",
+  //     "OAuth2 authentication",
+  //     "Google APIs",
+  //     "Google Developers OAuth 2.0 Playground",
+  //     "dotenv",
+  //   ],
 
-    description:
-      "React.js contact form with backend implemented in Node.js, its Nodemailer module and Express",
-    summary: "Nodemailer, Node.js, Express, React, OAuth 2.0, Google APIs",
-    github: "https://github.com/OlSavMe/Contact-Form",
-    url: "https://mail-contact-form.firebaseapp.com/",
-    libraries: null,
-  },
+  //   description:
+  //     "React.js contact form with backend implemented in Node.js, its Nodemailer module and Express",
+  //   summary: "Nodemailer, Node.js, Express, React, OAuth 2.0, Google APIs",
+  //   github: "https://github.com/OlSavMe/Contact-Form",
+  //   url: "https://mail-contact-form.firebaseapp.com/",
+  //   libraries: null,
+  // },
   {
     id: 6,
     title: "Azure DevOps Project",

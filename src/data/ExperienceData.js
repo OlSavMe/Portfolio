@@ -1,5 +1,16 @@
 const careerData = [
   {
+    id: 8,
+    position: "Freelance Web Developer",
+    company: "",
+    period: "December 2020 - present",
+    duties: ["-web development"],
+    tech: ["React.js", "Contentful headless CMS", "SASS/SCSS"],
+    projects: ["Koho Design Portfolio"],
+
+    link: "https://koho-create.firebaseapp.com/",
+  },
+  {
     id: 7,
     position: "Sole Web Developer",
     company: "Alejandra Beauty Salon",
@@ -9,7 +20,9 @@ const careerData = [
       "- developed new WordPress theme from scratch to implement the design",
       "- customised WordPress admin panel by adding custom posts, taxonomies, and data querying",
       "- congifured bilingual navigation with Polylang plugin and predefined php functions",
-      "- set up local development environment and staging environment, migrated the new website to official domain"
+      "- set up local development environment and staging environment, migrated the new website to official domain",
+      "- SEO and Google Analytics setup",
+      "- UI's usability testing and heuristic evaluation",
     ],
     tech: [
       "PHP",
@@ -19,11 +32,8 @@ const careerData = [
       "WordPress",
       "MAMP",
       "Figma",
-      "git",
     ],
-    projects: [
-      "Alejandra public website",
-    ],
+    projects: ["Alejandra public website"],
 
     link: "https://www.alejandra.fi/",
   },

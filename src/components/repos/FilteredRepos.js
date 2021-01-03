@@ -24,9 +24,16 @@ export const Filtered = (props) => {
 
   return (
     <>
-      <p>
-        <span>{filtered.length}</span> {props.keyword} repos
-      </p>
+      {filtered.length > 1 ? (
+        <p>
+          <span>{filtered.length}</span> {props.keyword} repos
+        </p>
+      ) : (
+        <p>
+          <span>{filtered.length}</span> {props.keyword} repo
+        </p>
+      )}
+
       <div className="list">
         {filtered.map((repo) => (
           <RepoCard key={repo.id} {...repo} />

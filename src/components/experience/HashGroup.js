@@ -4,7 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 const HashGroup = () => {
   const buttons = [
     { value: "TheShortcut", id: 1, btn: 1 },
-    { value: "WebDeveloper", id: 7, btn: 2 },
+    // { value: "WebDeveloper", id: 7, btn: 2 },
     { value: "WebscaleOy", id: 2, btn: 3 },
     { value: "UXDesign", id: 3, btn: 4 },
     { value: "TechTranslator", id: 5, btn: 5 },
