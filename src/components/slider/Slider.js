@@ -132,8 +132,8 @@ const Slider = () => {
                   <div>
                     <p>Features:</p>
                     <ul>
-                      {item.features.map((el) => (
-                        <li>{el}</li>
+                      {item.features.map((el, index) => (
+                        <li key={index}>{el}</li>
                       ))}
                     </ul>
                   </div>
@@ -142,8 +142,8 @@ const Slider = () => {
                   <div>
                     <p>Tools:</p>
                     <ul>
-                      {item.tools.map((el) => (
-                        <li>{el}</li>
+                      {item.tools.map((el, i) => (
+                        <li key={i}>{el}</li>
                       ))}
                     </ul>
                   </div>
@@ -152,8 +152,8 @@ const Slider = () => {
                   <div>
                     <p>Libraries:</p>
                     <ul>
-                      {item.libraries.map((el) => (
-                        <li>{el}</li>
+                      {item.libraries.map((el, x) => (
+                        <li key={x}>{el}</li>
                       ))}
                     </ul>
                   </div>

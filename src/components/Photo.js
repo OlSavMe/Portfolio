@@ -3,8 +3,8 @@ import "../styles/componentStyles/Photo.scss";
 
 function Photo(props) {
   return (
-    <div class="photo-section">
-      <section class="photo-item">
+    <div className="photo-section">
+      <section className="photo-item">
         {" "}
         <figure>
           <img src={require("../assets/sh.jpeg")} alt="me"></img>

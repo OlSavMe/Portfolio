@@ -23,19 +23,17 @@ const HashGroup = () => {
     <div className="hash-group">
       <ul>
         {buttons.map((i) => (
-          <li>
-            <AnchorLink
-              key={i.btn}
-              id={i.ibtn}
-              onClick={() => {
-                handleSelected(i.btn);
-              }}
-              className={selected === i.btn ? "selected" : ""}
-              href={`#${i.id}`}
-            >
-              #{i.value}
-            </AnchorLink>
-          </li>
+          <AnchorLink
+            key={i.btn}
+            id={i.ibtn}
+            onClick={() => {
+              handleSelected(i.btn);
+            }}
+            className={selected === i.btn ? "selected" : ""}
+            href={`#${i.id}`}
+          >
+            #{i.value}
+          </AnchorLink>
         ))}
       </ul>
     </div>

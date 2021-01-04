@@ -33,6 +33,7 @@
       .single {
         overflow: hidden;
         width: calc(50% - 10px);
+        min-height: 160px;
         margin: 20px 0;
         font-size: 1.3rem;
         padding: 1.2rem;
@@ -47,6 +48,10 @@
           margin: 2% 1%;
           font-size: 1rem;
           width: calc(100% - 10px);
+        }
+
+        @include media(mobile) {
+          min-height: 150px;
         }
 
         @include tablet {

@@ -54,8 +54,8 @@ const Project = (props) => {
               <div>
                 <p>Features:</p>
                 <ul>
-                  {features.map((el) => (
-                    <li>{el}</li>
+                  {features.map((el, index) => (
+                    <li key={index}>{el}</li>
                   ))}
                 </ul>
               </div>
@@ -64,8 +64,8 @@ const Project = (props) => {
               <div>
                 <p>Tools:</p>
                 <ul>
-                  {tools.map((el) => (
-                    <li>{el}</li>
+                  {tools.map((el, i) => (
+                    <li key={i}>{el}</li>
                   ))}
                 </ul>
               </div>
@@ -74,8 +74,8 @@ const Project = (props) => {
               <div>
                 <p>Libraries:</p>
                 <ul>
-                  {libraries.map((el) => (
-                    <li>{el}</li>
+                  {libraries.map((el, x) => (
+                    <li key={x}>{el}</li>
                   ))}
                 </ul>
               </div>

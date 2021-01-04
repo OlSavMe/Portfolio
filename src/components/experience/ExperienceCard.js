@@ -23,8 +23,8 @@ const ExpCard = (props) => {
             <div>
               <p>Project(s) I contributed to:</p>
               <ul>
-                {projects.map((el) => (
-                  <li>{el}</li>
+                {projects.map((el, index) => (
+                  <li key={index}>{el}</li>
                 ))}
               </ul>
             </div>
@@ -33,8 +33,8 @@ const ExpCard = (props) => {
             <div>
               <p>What I did:</p>
               <ul>
-                {duties.map((el) => (
-                  <li>{el}</li>
+                {duties.map((el, i) => (
+                  <li key={i}>{el}</li>
                 ))}
               </ul>
             </div>
@@ -44,8 +44,8 @@ const ExpCard = (props) => {
           <div>
             <p>Tools I used:</p>
             <ul>
-              {tech.map((el) => (
-                <li>{el}</li>
+              {tech.map((el, x) => (
+                <li key={x}>{el}</li>
               ))}
             </ul>
           </div>

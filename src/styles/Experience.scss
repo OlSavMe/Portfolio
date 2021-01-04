@@ -21,23 +21,20 @@
         align-items: center;
         flex-wrap: wrap;
 
-        li {
+        a {
           font-size: 1.25rem;
           margin: 0;
           padding: 5px;
           cursor: pointer;
+          color: $textColor;
+          text-decoration: none;
           @include media(mobile, ipad) {
             font-size: 1.1rem;
           }
 
-          a {
-            color: $textColor;
-            text-decoration: none;
-
-            &:hover,
-            &.selected {
-              color: $yellow;
-            }
+          &:hover,
+          &.selected {
+            color: $yellow;
           }
         }
       }

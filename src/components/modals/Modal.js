@@ -4,8 +4,8 @@ import "../../styles/componentStyles/Modal.scss";
 function Modal(props) {
   const toggleModal = props.toggleModal;
   return (
-    <div class="modal">
-      <div class="content">
+    <div className="modal">
+      <div className="content">
         <span onClick={toggleModal}>&times;</span>
         <article> {props.children}</article>
       </div>

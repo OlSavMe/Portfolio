@@ -39,7 +39,7 @@
     border-radius: 50%;
     cursor: pointer;
     align-items: center;
-    transition: transform ease-in 0.1s;
+    // transition: transform ease-in 0.1s;
 
     span {
       font-size: 20px;
@@ -83,6 +83,7 @@
       height: 6rem;
       width: 100%;
       border-radius: 2px;
+      z-index: 101;
 
       a {
         color: white;
@@ -120,7 +121,7 @@
       left: 1rem;
       font-weight: 400;
       font-size: 1.1rem;
-      z-index: 1;
+      z-index: 102;
     }
 
     .screenshot {
