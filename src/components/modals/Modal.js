@@ -6,7 +6,7 @@ function Modal(props) {
   return (
     <div className="modal">
       <div className="content">
-        <span onClick={toggleModal}>&times;</span>
+        <span onMouseDown={toggleModal}>&times;</span>
         <article> {props.children}</article>
       </div>
     </div>

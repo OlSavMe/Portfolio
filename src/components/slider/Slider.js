@@ -30,27 +30,21 @@ const Slider = () => {
     }
   };
 
-  const toggleModal = (e) => {
+  const toggleModal = () => {
     setShow(!show);
   };
 
-  const toNext = useCallback(
-    (e) => {
-      const index = current === length - 1 ? 0 : current + 1;
-      setCurrent(index);
-      sliderRef.current.focus();
-    },
-    [current, length]
-  );
+  const toNext = useCallback(() => {
+    const index = current === length - 1 ? 0 : current + 1;
+    setCurrent(index);
+    sliderRef.current.focus();
+  }, [current, length]);
 
-  const toPrev = useCallback(
-    (e) => {
-      const index = current === 0 ? length - 1 : current - 1;
-      setCurrent(index);
-      sliderRef.current.focus();
-    },
-    [current, length]
-  );
+  const toPrev = useCallback(() => {
+    const index = current === 0 ? length - 1 : current - 1;
+    setCurrent(index);
+    sliderRef.current.focus();
+  }, [current, length]);
 
   const moveKeys = useCallback(
     (event) => {
@@ -89,7 +83,7 @@ const Slider = () => {
         >
           <span id="count">{`${index + 1}/${length}`}</span>
 
-          <a href="#modal" onClick={toggleModal} className="figCaption">
+          <a href="#modal" onMouseDown={toggleModal} className="figCaption">
             {" "}
             <h3>
               <span>&rsaquo;&rsaquo;</span> {item.title}
@@ -107,7 +101,19 @@ const Slider = () => {
             </picture>
           )}
           {show && (
-            <Modal toggleModal={toggleModal} id="modal">
+            <Modal
+              toggleModal={toggleModal}
+              id="modal"
+              onTouchStart={(event) => {
+                event.stopPropagation();
+              }}
+              onTouchEnd={(event) => {
+                event.stopPropagation();
+              }}
+              onTouchMove={(event) => {
+                event.stopPropagation();
+              }}
+            >
               <h3>{item.title}</h3>
               <div className="links">
                 {" "}
@@ -132,8 +138,8 @@ const Slider = () => {
                   <div>
                     <p>Features:</p>
                     <ul>
-                      {item.features.map((el, index) => (
-                        <li key={index}>{el}</li>
+                      {item.features.map((el) => (
+                        <li>{el}</li>
                       ))}
                     </ul>
                   </div>
@@ -142,8 +148,8 @@ const Slider = () => {
                   <div>
                     <p>Tools:</p>
                     <ul>
-                      {item.tools.map((el, i) => (
-                        <li key={i}>{el}</li>
+                      {item.tools.map((el) => (
+                        <li>{el}</li>
                       ))}
                     </ul>
                   </div>
@@ -152,8 +158,8 @@ const Slider = () => {
                   <div>
                     <p>Libraries:</p>
                     <ul>
-                      {item.libraries.map((el, x) => (
-                        <li key={x}>{el}</li>
+                      {item.libraries.map((el) => (
+                        <li>{el}</li>
                       ))}
                     </ul>
                   </div>
@@ -170,10 +176,10 @@ const Slider = () => {
           )}
         </div>
       ))}
-      <button onClick={toPrev}>
+      <button onMouseDown={toPrev}>
         <span>&lsaquo;</span>
       </button>
-      <button onClick={toNext}>
+      <button onMouseDown={toNext}>
         <span>&rsaquo;</span>
       </button>
       <div className="dots">
