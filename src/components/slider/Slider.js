@@ -21,11 +21,11 @@ const Slider = () => {
   };
 
   const handleTouchEnd = () => {
-    if (touchStart - touchEnd > 80) {
+    if (touchStart - touchEnd > 150) {
       toNext();
     }
 
-    if (touchStart - touchEnd < -80) {
+    if (touchStart - touchEnd < -150) {
       toPrev();
     }
   };
@@ -88,14 +88,14 @@ const Slider = () => {
           aria-hidden={index !== current}
         >
           <span id="count">{`${index + 1}/${length}`}</span>
-          <figcaption>
-            <a href="#modal" onClick={toggleModal}>
-              {" "}
-              <h3>
-                <span>&rsaquo;&rsaquo;</span> {item.title}
-              </h3>
-            </a>
-          </figcaption>
+
+          <a href="#modal" onClick={toggleModal} className="figCaption">
+            {" "}
+            <h3>
+              <span>&rsaquo;&rsaquo;</span> {item.title}
+            </h3>
+          </a>
+
           {index === current && (
             <picture>
               <source media="(min-width: 480px)" srcSet={item.bigpic} />

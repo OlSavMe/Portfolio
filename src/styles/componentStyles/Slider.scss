@@ -75,7 +75,7 @@
     transition: all 1s ease;
     overflow: hidden;
 
-    figcaption {
+    .figCaption {
       color: #ffff;
       position: absolute;
       top: 0;
@@ -83,32 +83,30 @@
       height: 6rem;
       width: 100%;
       border-radius: 2px;
-      z-index: 101;
+      z-index: 1;
 
-      a {
-        color: white;
-        cursor: pointer;
-        text-decoration: none;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 0;
+      h3 {
+        text-align: end;
+        padding: 2rem;
+        font-size: 1.6rem;
+        font-weight: 300;
         margin: 0;
-        h3 {
-          text-align: end;
-          padding: 2rem;
-          font-size: 1.5rem;
-          font-weight: 300;
-          margin: 0;
+        @include mobile {
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+        > span {
+          font-size: 2rem;
+          font-weight: bold;
+          transition: all 0.4s linear;
+          padding: 0 5px;
+          color: $yellow;
           @include mobile {
-            font-size: 1.3rem;
-            font-weight: bold;
-          }
-          > span {
-            font-size: 2rem;
-            font-weight: bold;
-            transition: all 0.4s linear;
-            padding: 0 5px;
-            color: $yellow;
-            @include mobile {
-              font-size: 1.5rem;
-            }
+            font-size: 1.5rem;
           }
         }
       }
@@ -121,7 +119,7 @@
       left: 1rem;
       font-weight: 400;
       font-size: 1.1rem;
-      z-index: 102;
+      z-index: 2;
     }
 
     .screenshot {

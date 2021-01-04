@@ -164,6 +164,7 @@ const projectData = [
       "responsive layout with flexbox",
       "data fetching with Axios and WordPress headless CMS",
       "on loading skeleton",
+      "date formatting with Moment.js",
     ],
 
     tools: ["React", "WordPress API", "SASS", "Axios", "Firebase"],
