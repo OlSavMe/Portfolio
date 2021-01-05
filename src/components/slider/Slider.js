@@ -7,25 +7,30 @@ const Slider = () => {
   const [current, setCurrent] = useState(0);
   const { length } = projectData;
   const [show, setShow] = useState(false);
+  const [swiping, setSwiping] = useState(false);
   const sliderRef = useRef(0);
 
   const [touchStart, setTouchStart] = React.useState(0);
   const [touchEnd, setTouchEnd] = React.useState(0);
 
   const handleTouchStart = (e) => {
+    e.stopPropagation();
     setTouchStart(e.targetTouches[0].clientX);
+    setSwiping(false);
   };
 
   const handleTouchMove = (e) => {
+    e.stopPropagation();
     setTouchEnd(e.targetTouches[0].clientX);
+    setSwiping(true);
   };
 
   const handleTouchEnd = () => {
-    if (touchStart - touchEnd > 150) {
+    if (swiping && touchStart - touchEnd > 100) {
       toNext();
     }
 
-    if (touchStart - touchEnd < -150) {
+    if (swiping && touchStart - touchEnd < -100) {
       toPrev();
     }
   };
@@ -67,19 +72,17 @@ const Slider = () => {
   }, [moveKeys]);
 
   return (
-    <section
-      className="slider"
-      ref={sliderRef}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-    >
+    <section className="slider">
       {projectData.map((item, index) => (
         <div
+          ref={sliderRef}
           className={index === current ? "slide active" : "slide"}
           key={index}
           //for accessability reasons each non-active element is hidden
           aria-hidden={index !== current}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
         >
           <span id="count">{`${index + 1}/${length}`}</span>
 
@@ -101,19 +104,7 @@ const Slider = () => {
             </picture>
           )}
           {show && (
-            <Modal
-              toggleModal={toggleModal}
-              id="modal"
-              onTouchStart={(event) => {
-                event.stopPropagation();
-              }}
-              onTouchEnd={(event) => {
-                event.stopPropagation();
-              }}
-              onTouchMove={(event) => {
-                event.stopPropagation();
-              }}
-            >
+            <Modal toggleModal={toggleModal} id="modal">
               <h3>{item.title}</h3>
               <div className="links">
                 {" "}
