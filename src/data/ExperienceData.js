@@ -14,7 +14,7 @@ const careerData = [
     id: 7,
     position: "Sole Web Developer",
     company: "Alejandra Beauty Salon",
-    period: "September 2020 - present",
+    period: "September 2020 - January 2021",
     duties: [
       "- developed new brand-relevant design of the website",
       "- developed new WordPress theme from scratch to implement the design",

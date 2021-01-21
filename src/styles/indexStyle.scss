@@ -1,8 +1,13 @@
 // palette
 // $yellow: #f9a602;
-$yellow: #ffac27;
-$yellowrgb: rgb(249, 166, 2);
-$textColor: #666;
+//$yellow: #ffac27;
+//$yellow: #ffa908;
+
+$yellow: #fa9722;
+
+$yellowrgb: #fa9722;
+//$textColor: #666;
+$textColor: rgb(0, 0, 0);
 
 @mixin scrollbars {
   // Chrome, Edge, Opera, Safari, iOS

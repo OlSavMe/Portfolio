@@ -17,7 +17,7 @@ function Photo(props) {
           😃
         </span>{" "}
         I am a Web Developer living in Helsinki. I enjoy creating dynamic and
-        user-friendly apps. The tools I use include JavaScript, Reac.js, SASS,
+        user-friendly apps. The tools I use include JavaScript, React.js, SASS,
         PHP and WordPress, Google Cloud tools, REST API and headless CMS, UX
         prototyping. I've been studying software development in Haaga-Helia UAS.
         I have experience of working both as a sole developer and in
