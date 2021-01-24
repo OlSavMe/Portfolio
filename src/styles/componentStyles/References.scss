@@ -1,109 +1,89 @@
 @import "../indexStyle.scss";
 
 .content-slider {
-  width: 80%;
-  height: 360px;
+  width: 100%;
+  height: 100%;
   color: black;
   position: relative;
+  padding: 15% 0;
 
-  .tooltip {
-    display: none;
-    position: absolute;
-    font-size: 0.8rem;
-    bottom: 3rem;
-    left: 0;
-    padding: 4px;
-    color: white;
-    background-color: black;
-    z-index: 1;
+  @include media(tablet) {
+    padding: 0 0 20rem 0;
   }
 
-  &:hover .tooltip {
-    display: block;
+  @include media(ipad) {
+    padding: 0 0 40rem 0;
+  }
+  @include media(mobile) {
+    padding: 0 0 53rem 0;
   }
 
   .ref {
-    height: 350px;
-    width: 800px;
-    margin: 40px auto 0;
-    overflow: visible;
-    position: relative;
+    padding: 0 7rem;
+    opacity: 0;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
 
-    @include mobile {
-      width: 250px;
+    @include media(mobile, ipad, tablet) {
+      padding-bottom: 20%;
+      padding: 0.4rem 2rem;
     }
 
-    @include ipad {
-      width: 380px;
+    &.active {
+      opacity: 1;
     }
 
-    @include tablet {
-      width: 600px;
-    }
-    .mask {
-      overflow: hidden;
-      height: 350px;
+    .quote-wrapper {
+      width: 100%;
 
-      ul {
-        @include user-select-disabled;
+      p,
+      h3 {
         font-size: 1.2rem;
-        font-weight: 300;
-        // color: $textColor;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        @include mobile {
-          font-size: 0.7rem;
-        }
-
-        @include ipad {
-          font-size: 0.9rem;
-        }
-
-        @include tablet {
+        @include media(mobile, ipad) {
           font-size: 1rem;
         }
-
-        li {
-          height: inherit;
-          width: inherit;
-          position: absolute;
-          top: -325px;
-          list-style: none;
-          .quote {
-            font-style: italic;
-          }
-          .source {
-            font-weight: 400;
-            text-align: right;
-          }
-        }
-        .anim1 {
-          animation: cycle 15s linear infinite;
-        }
-
-        .anim2 {
-          animation: cycle2 15s linear infinite;
-        }
-
-        .anim3 {
-          animation: cycle3 15s linear infinite;
-        }
-
-        .anim4 {
-          animation: cycle4 15s linear infinite;
-        }
-
-        .anim5 {
-          animation: cycle5 15s linear infinite;
-        }
       }
-      &:hover li {
-        animation-play-state: paused;
-        -webkit-animation-play-state: paused;
-        -moz-animation-play-state: paused;
-        -o-animation-play-state: paused;
-      }
+    }
+  }
+
+  .nextbutton {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    background-color: rgba(36, 36, 36, 0);
+    color: $yellow;
+    outline: none;
+    box-shadow: none;
+    border-color: none;
+    border-style: none;
+    font-size: 6rem;
+    cursor: pointer;
+
+    @include media(mobile, ipad) {
+      font-size: 4rem;
+      padding: 0;
+    }
+  }
+
+  .prevbutton {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    background-color: rgba(36, 36, 36, 0);
+    color: $yellow;
+    outline: none;
+    box-shadow: none;
+    border-color: none;
+    border-style: none;
+    cursor: pointer;
+    font-size: 6rem;
+    padding: 0;
+
+    @include media(mobile, ipad) {
+      font-size: 4rem;
     }
   }
 }

@@ -9,9 +9,9 @@ function Education() {
       <section className="unis">
         <div id="card">
           <h3>
-            <span>2017-2020 </span>
+            <span>2017- spring 2021 </span>
             Haaga Helia University of Applied Sciences, Software Development
-            (GPA: 4.1/5, 273 cr)
+            (GPA: 4.1/5, 278 cr)
           </h3>
         </div>
         <div id="card">
