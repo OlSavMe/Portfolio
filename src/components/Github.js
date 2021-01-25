@@ -21,6 +21,8 @@ function Github() {
         return <Filtered keyword={keyword} nofork={nofork} />;
       case "JavaScript":
         return <Filtered keyword={keyword} nofork={nofork} />;
+      case "TypeScript":
+        return <Filtered keyword={keyword} nofork={nofork} />;
       case "PHP":
         return <Filtered keyword={keyword} nofork={nofork} />;
       case "HTML":

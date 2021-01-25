@@ -8,7 +8,7 @@
   position: relative;
 
   @include media(mobile, ipad, tablet, tablet-landscape) {
-    padding-bottom: 30%;
+    margin: 5% 3%;
   }
 
   .footer-grid {
@@ -111,13 +111,14 @@
   }
 
   .copyright {
-    margin: 1rem;
+    margin: 1rem 0 0 2rem;
     position: absolute;
     bottom: 1rem;
     color: $yellow;
     p {
       text-align: center;
       font-weight: bold;
+      margin: 0;
     }
   }
 }
